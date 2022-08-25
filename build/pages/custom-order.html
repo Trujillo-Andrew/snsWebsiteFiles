@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="stylesheet" href="../dist/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Quicksand&family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+555555(-108.7338,39.1583)/-108.7336,39.1588,16.25,0/300x200?access_token=pk.eyJ1Ijoia3VzbWFjayIsImEiOiJjbDBxYnhsbGUxYXc1M2NrYW1zNzRrY3ZwIn0.1FF7XfpJREW-kMfNdZl70g"
+    />
+    <title>Custom Order | Sweet & Simple</title>
+  </head>
+  <body>
+    <header>
+      <!-- NavBar -->
+      <input
+        type="checkbox"
+        name="hbr"
+        id="hbr"
+        class="hbr peer hidden"
+        aria-hidden="true"
+      />
+
+      <nav
+        class="fixed z-50 w-full border-b md:bg-opacity-70 backdrop-blur bg-desertSand navbar peer-checked:navbar-active md:absolute md:bg-transparent"
+      >
+        <div class="w-full px-6 flex justify-center mx-auto lg:w-max md:px-0">
+          <a
+            href="../index.html"
+            aria-label="logo"
+            class="flex space-x-2 items-center"
+          >
+            <img
+              src="../img/brand/SnS-fontOnly-bFont.png"
+              class="w-64 mt-2"
+              alt="trujillo media logo"
+              width="144"
+              height="48"
+            />
+          </a>
+          <label
+            for="hbr"
+            class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
+          >
+            <div
+              aria-hidden="true"
+              class="m-auto h-0.5 w-6 rounded bg-paleSilver transition duration-300"
+            ></div>
+            <div
+              aria-hidden="true"
+              class="m-auto mt-2 h-0.5 w-6 rounded bg-champagnePink transition duration-300"
+            ></div>
+          </label>
+        </div>
+        <div class="container m-auto px-2 md:px-12 lg:px-7">
+          <div
+            class="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0"
+          >
+            <div
+              class="navmenu hidden w-full flex-wrap justify-around items-center mb-16 space-y-20 p-6 rounded-xl shadow-lg bg-blue-600 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:shadow-none"
+            >
+              <div class="lg:pr-4">
+                <ul
+                  class="space-y-6 tracking-wide font-secondaryHeader text-lg lg:text-sm lg:flex lg:space-y-0"
+                >
+                  <li>
+                    <a
+                      href="../index.html"
+                      class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="custom-order.html"
+                      class="block md:px-4 pb-1 transition text-xl border-b-2 border-paleSilver hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>Order</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="about.html"
+                      class="block md:px-4 pb-1 transition text-xl  hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>About</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="reviews.html"
+                      class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>Reviews</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Feature Section -->
+
+      <section class="text-gray-600 body-font">
+        <div
+          class="container mx-auto flex flex-col px-5 py-24 justify-center items-center"
+        >
+          <img
+            class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded mt-20 shadow-2xl"
+            alt="hero"
+            src="../img/spotlight_photos/custom-3.jpeg"
+          />
+          <div
+            class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center"
+          >
+            <h1
+              class="title-font sm:text-4xl text-3xl mb-4 revealLeft font-secondaryHeader"
+            >
+              Custom Orders
+            </h1>
+            <p class="mb-8 font-bodyText max-w-sm revealRight">
+              Place a custom order online for your next event or maybe just to
+              enjoy your favorite cupcake. All orders require 3 days
+            </p>
+            <div class="flex w-full justify-center items-end">
+              <a
+                href="#orderForm"
+                class="inline-flex text-white bg-desertSand border-0 py-2 px-6 revealBottom focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                >Get Started</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Timeline Section -->
+
+    <section class="bg-isabelline body-font m-10 border-2 border-desertSand revealLeft shadow-2xl rounded-3xl">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-desertSand pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-desertSand text-white relative z-10 title-font font-medium text-sm">1</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row revealRight">
+            <div class="flex-shrink-0 w-24 h-24 bg-gray-100 text-desertSand rounded-full inline-flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="h-14 w-14 bi bi-clipboard-check" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+                <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+              </svg>
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Place Your order 3 days in advance</h2>
+              <p class="leading-relaxed">Carefully curating your special order takes time and passion, please schedule your orders accordingly.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto ">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-desertSand pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-desertSand text-white relative z-10 title-font font-medium text-sm">2</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row revealRight">
+            <div class="flex-shrink-0 w-24 h-24 bg-gray-100 text-desertSand rounded-full inline-flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg"  fill="currentColor" class="bi bi-bag-heart w-12 h-12" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5Zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0ZM14 14V5H2v9a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1ZM8 7.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"/>
+              </svg>
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">We'll get the ingredients</h2>
+              <p class="leading-relaxed">We'll hand select the best ingredients to fulfill your order.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto ">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-desertSand pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-desertSand text-white relative z-10 title-font font-medium text-sm">3</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row revealRight">
+            <div class="flex-shrink-0 w-24 h-24 bg-gray-100 text-desertSand rounded-full inline-flex items-center justify-center">
+              <svg fill="currentColor" class="bi bi-bag-heart w-12 h-12" viewBox="0 0 50 50"><path d="M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h30q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm0-18.5V39h30V23.5h-5.5v10h-19v-10Zm8.5 7h13v-7h-13ZM9 20.5h30V9H9Zm7-5q-.65 0-1.075-.425Q14.5 14.65 14.5 14q0-.65.425-1.075Q15.35 12.5 16 12.5q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm8 0q-.65 0-1.075-.425Q22.5 14.65 22.5 14q0-.65.425-1.075Q23.35 12.5 24 12.5q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm8 0q-.65 0-1.075-.425Q30.5 14.65 30.5 14q0-.65.425-1.075Q31.35 12.5 32 12.5q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Z"/></svg>
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">We'll prepare it with love</h2>
+              <p class="leading-relaxed">The day of your order, we'll bake it and package it fresh with love.</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto ">
+          <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
+            <div class="h-full w-1 bg-desertSand pointer-events-none"></div>
+          </div>
+          <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-desertSand text-white relative z-10 title-font font-medium text-sm">4</div>
+          <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row revealRight">
+            <div class="flex-shrink-0 w-24 h-24 bg-gray-100 text-desertSand rounded-full inline-flex items-center justify-center">
+              <svg fill="currentColor" class="bi bi-bag-heart w-12 h-12" viewBox="0 0 50 50"><path d="m19 20.6 5-2.5 5 2.5V9H19ZM14 34v-4h10v4Zm-5 8q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h30q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9ZM9 9v30V9Zm0 30h30V9h-7v16.45l-8-4-8 4V9H9v30Z"/></svg>
+            </div>
+            <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+              <h2 class="font-medium title-font text-gray-900 mb-1 text-xl">Receive your Order</h2>
+              <p class="leading-relaxed">Whether it's for delivery or pick up, you'll find your order packaged and ready for you on time. You'll not only find a sweet surprise inside of your box, you'll also find one on the outside!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  
+    <!-- Order Form -->
+
+    <section class="bg-isabelline font-bodyText m-10 border-2 border-desertSand shadow-2xl reveal rounded-3xl">
+      <div class="flex-1 md:p-0 lg:pt-8 lg:px-8 md:ml-24 flex flex-col">
+        <div class="bg-cream-lighter p-4 shadow">
+          <div class="md:flex">
+            <h2
+              id="orderForm"
+              class="md:w-1/3 uppercase border-b-2 border-desertSand text-lg sm:text-2xl mb-6"
+            >
+              Order Form
+            </h2>
+          </div>
+          <form>
+            <!-- Location Section -->
+            <div class="md:flex mb-8 revealRight">
+              <div class="md:w-1/3">
+                <legend class="uppercase tracking-wide text-sm">
+                  Location
+                </legend>
+                <p class="text-xs font-light text-red-500 max-w-sm">
+                  This entire section is required except for business details
+                  for all deliveries.
+                </p>
+              </div>
+              <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
+                <div class="mb-4">
+                  <label class="block uppercase tracking-wide text-xs font-secondaryHeader"
+                    >Name</label
+                  >
+                  <input
+                    class="w-full shadow-inner p-4 border-0"
+                    type="text"
+                    name="name"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="md:flex mb-4">
+                  <div class="md:flex-1 md:pr-3">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Delivery Address</label
+                    >
+                    <input
+                      class="w-full shadow-inner p-4 border-0"
+                      type="text"
+                      name="address_street"
+                      placeholder="123 My Street"
+                    />
+                  </div>
+                  <div class="md:flex-1 md:pl-3">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Building/Suite No./Apt No.</label
+                    >
+                    <input
+                      class="w-full shadow-inner p-4 border-0"
+                      type="text"
+                      name="address_number"
+                      placeholder="#"
+                    />
+                  </div>
+                </div>
+                <div class="md:flex mb-4">
+                  <div class="md:flex-1 md:pr-3">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Business Name</label
+                    >
+                    <input
+                      class="w-full shadow-inner p-4 border-0"
+                      type="text"
+                      name="lat"
+                      placeholder="My Business"
+                    />
+                  </div>
+                  <div class="md:flex-1 md:pl-3">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Business Phone Number</label
+                    >
+                    <input
+                      class="w-full shadow-inner p-4 border-0"
+                      type="tel"
+                      name="busPhone"
+                      placeholder="(970) 858-1234"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Info Section -->
+            <div class="md:flex mb-8 revealRight">
+              <div class="md:w-1/3">
+                <legend class="uppercase tracking-wide text-sm">Contact</legend>
+              </div>
+              <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
+                <div class="mb-4">
+                  <label class="block uppercase tracking-wide text-xs font-secondaryHeader"
+                    >Phone</label
+                  >
+                  <input
+                    class="w-full shadow-inner p-4 border-0"
+                    type="tel"
+                    name="phone"
+                    placeholder="(555) 555-5555"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                    >Occasion</label
+                  >
+                  <select name="" id="" class="w-full border-0 p-4">
+                    <option value="">Choose Occasion</option>
+                    <option value="Delivery">Delivery</option>
+                    <option value="PickUp">Pick Up</option>
+                  </select>
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                    >Email</label
+                  >
+                  <input
+                    class="w-full shadow-inner p-4 border-0"
+                    type="email"
+                    name="email"
+                    placeholder="contact@acme.co"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Details Section -->
+            <div class="md:flex revealRight">
+              <div class="md:w-1/3">
+                <legend class="uppercase tracking-wide text-sm">Details</legend>
+              </div>
+              <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
+                <div class="md:flex mb-4">
+                  <div class="md:flex-1 md:pr-3">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Due Date</label
+                    >
+                    <span class="text-xs py-4 px-2 bg-grey-light text-red-500"
+                        >3 Day Minimum</span
+                      >
+                    <div class="w-full flex">
+                      
+                      <input
+                        class="flex-1 shadow-inner p-4 border-0"
+                        type="date"
+                        name="dueDate"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <div class="md:flex-1 md:pl-3 mt-2 md:mt-0">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Due Time</label
+                    >
+                    <span class="text-xs py-4 px-2 bg-grey-light text-red-500"
+                        >11a - 5p</span
+                      >
+                    <div class="w-full flex">
+                      
+                      <input
+                        class="flex-1 shadow-inner p-4 border-0"
+                        type="time"
+                        name="dueTime"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="md:flex mb-4">
+                  <div class="md:flex-1 ">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Cake Flavor</label
+                    >
+                    <div class="w-full flex">
+                      <span
+                        class="text-xs py-4 bg-grey-light text-grey-dark"
+                      ></span>
+                      <select
+                        class="flex-1 shadow-inner p-4 border-0"
+                        type="text"
+                        name="instagram"
+                        placeholder="acmeco"
+                      >
+                        <option value="">Select One</option>
+                        <option value="Vanilla">Vanilla</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Red Velvet">Red Velvet</option>
+                        <option value="Carrot Cake">Carrot Cake</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="md:flex-1 md:pl-3 mt-2 md:mt-0">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Filling</label
+                    >
+                    <div class="w-full flex">
+                      <span
+                        class="text-xs py-4 bg-grey-light text-grey-dark"
+                      ></span>
+                      <select
+                        class="flex-1 shadow-inner p-4 border-0"
+                        type="text"
+                        name="yelp"
+                        placeholder=""
+                      >
+                        <option>Select One</option>
+                        <option value="Lemon">Lemon</option>
+                        <option value="Caramel">Caramel</option>
+                        <option value="Strawberry Jelly">
+                          Strawberry Jelly
+                        </option>
+                        <option value="Raspberry Jelly">Raspberry Jelly</option>
+                        <option value="Buttercream">Buttercream</option>
+                        <option value="Nutella">Nutella</option>
+                        <option value="Biscoff">Biscoff</option>
+                        <option value="Other">Other</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:flex mb-4">
+                  <div class="md:flex-1  mt-2 md:mt-0">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Filling</label
+                    >
+                    <div class="w-full flex">
+                      <span
+                        class="text-xs py-4 bg-grey-light text-grey-dark"
+                      ></span>
+                      <select
+                        class="flex-1 shadow-inner p-4 border-0"
+                        type="text"
+                        name="yelp"
+                        placeholder=""
+                      >
+                      <option>Select One</option>
+                      <option value="Cupcakes">Cupcakes</option>
+                      <option value="$40 6" 4 Layer - American Buttercream Frosting Only">
+                        $40 6" 4 Layer - American Buttercream Frosting Only
+                      </option>
+                      <option value="$50 8" 4 Layer - American Buttercream Frosting Only">
+                        $50 8" 4 Layer - American Buttercream Frosting Only
+                      </option>
+                      <option value="$25 4" 4 Layer - American Buttercream Frosting Only">
+                        $25 4" 4 Layer - American Buttercream Frosting Only
+                      </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Special Requests Section -->
+            <div class="md:flex mb-6 revealRight">
+              <div class="md:w-1/3">
+                <legend class="uppercase tracking-wide text-sm">
+                  Special Requests & Details
+                </legend>
+              </div>
+              <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
+                <textarea
+                  class="w-full shadow-inner p-4 border-0"
+                  placeholder="Please leave us details on any special requests for your order here."
+                  rows="6"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div
+              class="md:flex mb-6 border border-t-1 border-b-0 border-x-0 border-cream-dark"
+            >
+              <div class="md:flex-1 px-3 text-center md:text-right">
+                <button type="submit" class="border-2 border-black p-2 bg-desertSand rounded-full hover:bg-champagnePink">Place Order</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer
+      class="bg-isabelline m-10 shadow-2xl border-2 border-desertSand reveal"
+    >
+      <div class="bg-isabelline py-6 border-y border-white">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-2"
+          >
+            <div class="text-center md:text-left mb-3 md:mb-0">
+              <span class="font-secondaryHeader uppercase tracking-widest"
+                >Newsletter</span
+              >
+              <p class="font-secondaryHeader">Subscribe to our newsletter</p>
+            </div>
+
+            <form class="w-full md:max-w-md flex gap-2">
+              <input
+                placeholder="Email"
+                class="w-full flex-1 bg-paleSilver text-white placeholder-white border border-black focus:ring ring-paleSilver rounded outline-none transition duration-100 px-3 py-2"
+              />
+
+              <button
+                class="inline-block bg-white border border-black hover:bg-gray-100 focus-visible:ring ring-paleSilver active:text-champagnePink text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 lg:pt-6">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 mb-4"
+          >
+            <div class="col-span-full lg:col-span-2">
+              <!-- logo - start -->
+              <div class="lg:-mt-2 mb-4">
+                <a
+                  href="#"
+                  class="items-center text-black-800 text-xl md:text-2xl gap-2"
+                  aria-label="logo"
+                >
+                  <img
+                    src="../img/brand/SnS-logoOnly-bFont.png"
+                    alt=""
+                    class="w-1/4 h-auto"
+                  />
+                </a>
+              </div>
+              <!-- logo - end -->
+
+              <p class="sm:pr-8 mb-6">"Fruita's little slice of heaven"</p>
+
+              <!-- social - start -->
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-desertSand active:text-gray-600 transition duration-100"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-desertSand active:text-gray-600 transition duration-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- social - end -->
+            </div>
+
+            <!-- nav - start -->
+            <div>
+              <div
+                class="text-gray-800 font-secondaryHeader tracking-widest uppercase mb-4"
+              >
+                Products
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="custom-order.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Custom Orders</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="cupcake-gallery.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Cupcake Gallery</a
+                  >
+                </div>
+              </nav>
+            </div>
+            <!-- nav - end -->
+
+            <!-- nav - start -->
+            <div>
+              <div
+                class="text-gray-800 font-secondaryHeader tracking-widest uppercase mb-4"
+              >
+                Company
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="about.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >About</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="careers.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Careers</a
+                  >
+                </div>
+              </nav>
+            </div>
+            <!-- nav - end -->
+
+            <!-- nav - start -->
+            <div>
+              <div
+                class="text-gray-800 font-secondaryHeader tracking-widest uppercase mb-4"
+              >
+                Support
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="contact.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Contact</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="custom-order.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >FAQ</a
+                  >
+                </div>
+              </nav>
+            </div>
+            <!-- nav - end -->
+
+            <!-- nav - start -->
+            <div>
+              <div
+                class="text-gray-800 font-secondaryHeader tracking-widest uppercase mb-4"
+              >
+                Legal
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="tos.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Terms of Service</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="privacy-policy.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Privacy Policy</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="refunds.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Refund Policy</a
+                  >
+                </div>
+              </nav>
+            </div>
+            <!-- nav - end -->
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-between border-t border-white px-5"
+        >
+          <div
+            class="text-gray-400 border-white text-sm text-center md:text-start py-8"
+          >
+            © 2022 - <span> <span id="copyYear"></span></span> Sweet and Simple
+            Cupcakery. All rights reserved.
+          </div>
+          <div class="text-gray-400 text-sm text-center md:text-end py-8">
+            <a href="https://trujillomedia.com" target="_blank">
+              Powered by:
+              <span class="underline text-trujilloMediaBrandColor"
+                >Trujillo Media</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../dist/main.js"></script>
+  </body>
+</html>
+
+<!-- TODO Overflow Hidden -->

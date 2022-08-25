@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="stylesheet" href="dist/custom.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Quicksand&family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+555555(-108.7338,39.1583)/-108.7336,39.1588,16.25,0/300x200?access_token=pk.eyJ1Ijoia3VzbWFjayIsImEiOiJjbDBxYnhsbGUxYXc1M2NrYW1zNzRrY3ZwIn0.1FF7XfpJREW-kMfNdZl70g"
+    />
+    <title>Home | Sweet & Simple</title>
+  </head>
+  <body>
+    <header>
+      <!-- NavBar -->
+      <input
+        type="checkbox"
+        name="hbr"
+        id="hbr"
+        class="hbr peer hidden"
+        aria-hidden="true"
+      />
+
+      <nav
+        class="fixed z-50 w-full border-b md:bg-opacity-70 backdrop-blur bg-desertSand navbar peer-checked:navbar-active md:absolute md:bg-transparent"
+      >
+        <div class="w-full px-6 flex justify-center mx-auto lg:w-max md:px-0">
+          <a
+            href="index.html"
+            aria-label="logo"
+            class="flex space-x-2 items-center"
+          >
+            <img
+              src="img/brand/SnS_wFont.png"
+              class="w-64 mt-2"
+              alt="trujillo media logo"
+              width="144"
+              height="48"
+            />
+          </a>
+          <label
+            for="hbr"
+            class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
+          >
+            <div
+              aria-hidden="true"
+              class="m-auto h-0.5 w-6 rounded bg-paleSilver transition duration-300"
+            ></div>
+            <div
+              aria-hidden="true"
+              class="m-auto mt-2 h-0.5 w-6 rounded bg-champagnePink transition duration-300"
+            ></div>
+          </label>
+        </div>
+        <div class="container m-auto px-2 md:px-12 lg:px-7">
+          <div
+            class="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0"
+          >
+            <div
+              class="navmenu hidden w-full flex-wrap justify-around items-center mb-16 space-y-20 p-6 rounded-xl shadow-lg bg-blue-600 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:shadow-none"
+            >
+              <div class="text-white lg:pr-4">
+                <ul
+                  class="space-y-6 tracking-wide font-secondaryHeader text-lg lg:text-sm lg:flex lg:space-y-0"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block md:px-4 pb-1 transition text-xl border-b-2 border-paleSilver"
+                    >
+                      <span>Home</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="pages/custom-order.html"
+                      class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>Order</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="pages/about.html"
+                      class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>About</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="pages/reviews.html"
+                      class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>Reviews</span>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="pages/contact.html"
+                      class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
+                    >
+                      <span>Contact</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Background image -->
+      <div
+        class="relative overflow-hidden bg-no-repeat bg-cover"
+        style="
+          background-position: 50%;
+          background-image: url('img/spotlight_photos/SnS-hero.jpeg');
+          height: 100vh;
+        "
+      >
+        <div
+          class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+          style="background-color: rgba(0, 0, 0, 0.5)"
+        >
+          <div class="flex justify-between items-center h-full">
+            <div class="text-start text-white max-w-2xl mx-10">
+              <h3 class="text-md md:text-3xl mb-8 font-primaryHeader">
+                <span class="border-b-2 border-champagnePink">Fruita's</span>
+                Little Slice of Heaven
+              </h3>
+
+              <h1
+                class="text-2xl md:text-3xl lg:text-5xl mt-0 mb-6 font-secondaryHeader"
+              >
+                We're online! Order your favorite cupcakes today!
+              </h1>
+              <a href=""
+                ><button
+                  type="button"
+                  title="Learn more"
+                  class="w-full py-2.5 px-5 text-center rounded-full transition bg-gradient-to-b from-isabelline to-desertSand active:from-champagnePink focus:from-isabelline sm:w-max"
+                >
+                  <span
+                    class="block text-black font-secondaryHeader text-sm lg:text-lg"
+                  >
+                    Order Now
+                  </span>
+                </button></a
+              >
+            </div>
+            <div class="text-end hidden md:inline text-white max-w-2xl">
+              <img
+                src="img/brand/sns_wooden.jpeg"
+                class="rounded-full w-1/2"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Background image -->
+    </header>
+
+    <!-- Gallery Section -->
+
+    <section class="bg-isabelline">
+      <div class="container px-5 py-24 mx-auto flex flex-wrap">
+        <div class="flex w-full mb-20 flex-wrap">
+          <h1
+            class="sm:text-5xl text-2xl font-primaryHeader lg:w-1/3 lg:my-0 my-4"
+          >
+            Our
+            <span class="border-b-2 border-desertSand">Heavenly</span> Cupcakes
+          </h1>
+        </div>
+        <div class="flex flex-wrap md:-m-2 -m-1">
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                loading="lazy"
+                class="w-full object-cover rounded-full h-full revealLeft shadow-xl object-center block"
+                src="img/featuredCupcakes/featureFolderAugust2022/cupcake_1.jpeg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full shadow-xl reveal object-center block"
+                src="img/featuredCupcakes/featureFolderAugust2022/cupcake_3.jpeg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover rounded-2xl revealRight shadow-xl object-center block"
+                src="img/featuredCupcakes/featureFolderAugust2022/cupcake_2.jpeg"
+              />
+            </div>
+          </div>
+          <div class="flex flex-wrap w-1/2">
+            <div class="md:p-2 p-1 w-full">
+              <img
+                alt="gallery"
+                class="w-full h-full object-cover rounded-2xl revealBottom shadow-xl object-center block"
+                src="img/featuredCupcakes/featureFolderAugust2022/cupcake_4.jpeg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover h-full shadow-xl revealLeft object-center block"
+                src="img/featuredCupcakes/featureFolderAugust2022/cupcake_5.jpeg"
+              />
+            </div>
+            <div class="md:p-2 p-1 w-1/2">
+              <img
+                alt="gallery"
+                class="w-full object-cover rounded-full h-full shadow-xl revealRight object-center block"
+                src="img/featuredCupcakes/featureFolderAugust2022/cupcake_6.jpeg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <div class="bg-white pb-6 sm:pb-8 lg:pb-12">
+      <section class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+        <div class="flex flex-wrap justify-between mb-8 md:mb-16">
+          <div
+            class="w-full lg:w-1/3 flex flex-col justify-center lg:pt-48 revealBottom lg:pb-24 mb-6 sm:mb-12 lg:mb-0"
+          >
+            <h1
+              class="text-black-800 text-3xl sm:text-4xl md:text-5xl font-primaryHeader mb-4 md:mb-8"
+            >
+              A
+              <span class="border-b-2 border-desertSand"
+                >Sweet and Simple Story
+              </span>
+            </h1>
+
+            <p class="max-w-md font-bodyText xl:text-lg leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Architecto corrupti vel corporis dolorem odit ut iusto eaque
+              facilis culpa sapiente rerum, eum nemo suscipit ad velit neque
+              animi nobis ipsum? Eveniet suscipit deserunt, nemo possimus, omnis
+              quos natus iusto quae consectetur nobis, quo voluptates! Unde
+              harum deleniti obcaecati repellendus nisi.
+            </p>
+          </div>
+
+          <div class="w-full lg:w-2/3 flex mb-12 md:mb-16">
+            <div
+              class="bg-white rounded-lg overflow-hidden revealLeft relative z-5 top-12 md:top-16 left-12 md:left-16 -ml-12 lg:ml-0"
+            >
+              <img
+                src="img/spotlight_photos/olivia_spotlight.jpeg"
+                loading="lazy"
+                alt="Photo by Kaung Htet"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+
+            <div
+              class="bg-white rounded-lg shadow-2xl reveal overflow-hidden relative z-10 bottom-6 md:bottom-8 left-6 md:left-8 -ml-6 lg:ml-0"
+            >
+              <img
+                src="img/spotlight_photos/connie_spotlight.jpeg"
+                loading="lazy"
+                alt="Photo by Kaung Htet"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+
+            <div class="bg-white rounded-lg revealRight overflow-hidden">
+              <img
+                src="img/spotlight_photos/miranda_spotlight.jpeg"
+                loading="lazy"
+                alt="Photo by Manny Moreno"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex flex-col md:flex-row justify-between items-center gap-8"
+        >
+          <!-- social - start -->
+          <div class="flex justify-center lg:justify-start items-center gap-4">
+            <span
+              class="text-gray-400 text-sm sm:text-base font-secondaryHeader tracking-widest uppercase"
+              >Social Media</span
+            >
+            <span class="w-12 h-px bg-gray-200"></span>
+
+            <div class="flex gap-4">
+              <a
+                href="#"
+                target="_blank"
+                class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+              >
+                <svg
+                  class="w-5 h-5"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+
+              <a
+                href="#"
+                target="_blank"
+                class="text-gray-400 hover:text-gray-500 active:text-gray-600 transition duration-100"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-facebook"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- social - end -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Testimonials -->
+
+    <div
+      class="relative overflow-hidden bg-no-repeat bg-cover"
+      style="
+        background-position: 50%;
+        background-image: url('img/spotlight_photos/reviewsPhoto.jpeg');
+        height: 100vh;
+      "
+    >
+      <div
+        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.5)"
+      >
+        <div class="flex justify-between items-center revealLeft h-full">
+          <div class="text-center mx-10">
+            <div class="bg-isabelline rounded-3xl">
+              <div class="container px-5 py-5 mx-auto">
+                <div class="flex flex-wrap -m-4">
+                  <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                    <div class="h-full text-center reveal">
+                      <img
+                        alt="testimonial"
+                        class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                        src="img/reviews/aaronNall.png"
+                      />
+                      <p class="leading-relaxed">
+                        "Saw pictures online and had to check it out. I loved
+                        the selection, there was great choices for the kids to
+                        pick from, and something sweet for the adults. The
+                        service was great, and I love the energy. This is a
+                        great place for a dessert after a meal downtown, or just
+                        a nice treat to bring home to the wife and kids. I will
+                        be following online to see what else I want to try!"
+                      </p>
+                      <span
+                        class="inline-block h-1 w-10 rounded bg-desertSand mt-6 mb-4"
+                      ></span>
+                      <h2
+                        class="text-gray-900 font-medium title-font tracking-wider text-sm"
+                      >
+                        Aaron Nall
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                    <div class="h-full text-center revealBottom">
+                      <img
+                        alt="testimonial"
+                        class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                        src="img/reviews/lesleyTyre.png"
+                      />
+                      <p class="leading-relaxed">
+                        "We got one of each so we could try them all. Super
+                        delicious, moist, and flavorful"
+                      </p>
+                      <span
+                        class="inline-block h-1 w-10 rounded bg-desertSand mt-6 mb-4"
+                      ></span>
+                      <h2
+                        class="text-gray-900 font-medium title-font tracking-wider text-sm"
+                      >
+                        Lesley Tyre
+                      </h2>
+                      <p class="text-gray-500">Google Local Guide</p>
+                    </div>
+                  </div>
+                  <div class="lg:w-1/3 lg:mb-0 p-4">
+                    <div class="h-full text-center reveal">
+                      <img
+                        alt="testimonial"
+                        class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                        src="img/reviews/kaitlinMatlock.png"
+                      />
+                      <p class="leading-relaxed">
+                        "They provide so many unique flavors and their cupcakes
+                        tasted just as good as they looked. The detail they put
+                        into each cupcake was exquisite! We will definitely be
+                        making many more orders from this wonderful business!"
+                      </p>
+                      <span
+                        class="inline-block h-1 w-10 rounded bg-desertSand mt-6 mb-4"
+                      ></span>
+                      <h2
+                        class="text-gray-900 font-medium title-font tracking-wider text-sm"
+                      >
+                        Kaitlin Matlock
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Call to Action -->
+
+    <div class="py-16 bg-white">
+      <div class="container m-auto px-6 space-y-8 md:px-12 lg:px-20">
+        <div
+          class="justify-center text-center gap-6 md:text-left md:flex lg:items-center lg:gap-16"
+        >
+          <div
+            class="order-last mb-6 space-y-6 revealRight md:mb-0 md:w-6/12 lg:w-6/12"
+          >
+            <h1 class="text-4xl font-secondaryHeader md:text-5xl">
+              What are you waiting for?
+              <span class="border-b-2 border-desertSand text-desertSand"
+                >Order Now!</span
+              >
+            </h1>
+            <p class="text-lg font-bodyText">
+              Don't wait! Custom orders are first come, first serve! Place your
+              order today so we can cater your next event and everyone can have
+              a little slice of heaven!
+            </p>
+            <div
+              class="flex flex-row-reverse flex-wrap justify-center gap-4 md:gap-6 md:justify-end"
+            >
+              <a
+                href="pages/custom-order.html"
+                class="w-full py-3 px-6 text-center shadow-xl rounded-xl transition bg-gradient-to-b from-isabelline to-desertSand active:from-champagnePink focus:from-isabellin sm:w-max"
+              >
+                <span class="block text-black font-secondaryHeader">
+                  Order
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="grid grid-cols-5 grid-rows-4 gap-4 md:w-5/12 lg:w-6/12">
+            <div class="col-span-2 row-span-4">
+              <img
+                src="img/spotlight_photos/custom-2.jpeg"
+                class="rounded-full reveal shadow-2xl"
+                width="640"
+                height="960"
+                alt="shoes"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-span-2 row-span-2">
+              <img
+                src="img/spotlight_photos/custom-3.jpeg"
+                class="w-full h-full reveal object-cover object-top shadow-2xl rounded-xl"
+                width="640"
+                height="640"
+                alt="shoe"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-span-3 row-span-3">
+              <img
+                src="img/spotlight_photos/custom-1.jpeg"
+                class="w-full h-full reveal object-cover object-top shadow-2xl rounded-xl"
+                width="640"
+                height="427"
+                alt="shoes"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer
+      class="bg-isabelline m-10 shadow-2xl border-2 border-desertSand reveal"
+    >
+      <div class="bg-isabelline py-6 border-y border-white">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            class="flex flex-col md:flex-row justify-between items-center gap-2"
+          >
+            <div class="text-center md:text-left mb-3 md:mb-0">
+              <span class="font-secondaryHeader uppercase tracking-widest"
+                >Newsletter</span
+              >
+              <p class="font-secondaryHeader">Subscribe to our newsletter</p>
+            </div>
+
+            <form class="w-full md:max-w-md flex gap-2">
+              <input
+                placeholder="Email"
+                class="w-full flex-1 bg-paleSilver text-white placeholder-white border border-black focus:ring ring-paleSilver rounded outline-none transition duration-100 px-3 py-2"
+              />
+
+              <button
+                class="inline-block bg-white border border-black hover:bg-gray-100 focus-visible:ring ring-paleSilver active:text-champagnePink text-sm md:text-base font-semibold text-center rounded outline-none transition duration-100 px-8 py-2"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-4 lg:pt-6">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-12 lg:gap-8 mb-4"
+          >
+            <div class="col-span-full lg:col-span-2">
+              <!-- logo - start -->
+              <div class="lg:-mt-2 mb-4">
+                <a
+                  href="#"
+                  class="items-center text-black-800 text-xl md:text-2xl gap-2"
+                  aria-label="logo"
+                >
+                  <img
+                    src="../img/brand/SnS-logoOnly-bFont.png"
+                    alt=""
+                    class="w-1/4 h-auto"
+                  />
+                </a>
+              </div>
+              <!-- logo - end -->
+
+              <p class="sm:pr-8 mb-6">"Fruita's little slice of heaven"</p>
+
+              <!-- social - start -->
+              <div class="flex gap-4">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-desertSand active:text-gray-600 transition duration-100"
+                >
+                  <svg
+                    class="w-5 h-5"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+
+                <a
+                  href="#"
+                  target="_blank"
+                  class="hover:text-desertSand active:text-gray-600 transition duration-100"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-facebook"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- social - end -->
+            </div>
+
+            <!-- nav - start -->
+            <div>
+              <div
+                class="text-gray-800 font-secondaryHeader tracking-widest uppercase mb-4"
+              >
+                Products
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="custom-order.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Custom Orders</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="cupcake-gallery.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Cupcake Gallery</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="custom-order.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Pricing</a
+                  >
+                </div>
+              </nav>
+            </div>
+            <!-- nav - end -->
+
+            <!-- nav - start -->
+            <div>
+              <div
+                class="text-gray-800 font-secondaryHeader tracking-widest uppercase mb-4"
+              >
+                Company
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="about.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >About</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="careers.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Careers</a
+                  >
+                </div>
+              </nav>
+            </div>
+            <!-- nav - end -->
+
+            <!-- nav - start -->
+            <div>
+              <div
+                class="text-gray-800 font-secondaryHeader tracking-widest uppercase mb-4"
+              >
+                Support
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="contact.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Contact</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="custom-order.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >FAQ</a
+                  >
+                </div>
+              </nav>
+            </div>
+            <!-- nav - end -->
+
+            <!-- nav - start -->
+            <div>
+              <div
+                class="text-gray-800 font-secondaryHeader tracking-widest uppercase mb-4"
+              >
+                Legal
+              </div>
+
+              <nav class="flex flex-col gap-4">
+                <div>
+                  <a
+                    href="tos.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Terms of Service</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="privacy-policy.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Privacy Policy</a
+                  >
+                </div>
+
+                <div>
+                  <a
+                    href="refunds.html"
+                    class="font-bodyText hover:text-desertSand active:text-champagnePink transition duration-100"
+                    >Refund Policy</a
+                  >
+                </div>
+              </nav>
+            </div>
+            <!-- nav - end -->
+          </div>
+        </div>
+        <div
+          class="flex flex-col md:flex-row justify-between border-t border-white px-5"
+        >
+          <div
+            class="text-gray-400 border-white text-sm text-center md:text-start py-8"
+          >
+            © 2022 - <span> <span id="copyYear"></span></span> Sweet and Simple
+            Cupcakery. All rights reserved.
+          </div>
+          <div class="text-gray-400 text-sm text-center md:text-end py-8">
+            <a href="https://trujillomedia.com" target="_blank">
+              Powered by:
+              <span class="underline text-trujilloMediaBrandColor"
+                >Trujillo Media</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="dist/main.js"></script>
+  </body>
+</html>
