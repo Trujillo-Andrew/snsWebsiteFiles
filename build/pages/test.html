@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="../dist/output.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <!-- Navbar -->
+    <input
+      type="checkbox"
+      name="hbr"
+      id="hbr"
+      class="hbr peer hidden"
+      aria-hidden="true"
+    />
+    <nav
+      class="fixed z-10 w-full border-b md:bg-opacity-70 backdrop-blur bg-gray-700 navbar peer-checked:navbar-active md:absolute md:bg-transparent"
+    >
+      <div class="container m-auto px-2 md:px-12 lg:px-7">
+        <div
+          class="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0"
+        >
+          <div class="w-full px-6 flex justify-between lg:w-max md:px-0">
+            <a
+              href="index.html"
+              aria-label="logo"
+              class="flex space-x-2 items-center"
+            >
+              <img
+                src="img/brand/tm-brand-sides-white-text-transparent.png"
+                class="w-64"
+                alt="trujillo media logo"
+                width="144"
+                height="48"
+              />
+            </a>
+            <label
+              for="hbr"
+              class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
+            >
+              <div
+                aria-hidden="true"
+                class="m-auto h-0.5 w-6 rounded bg-desertSand transition duration-300"
+              ></div>
+              <div
+                aria-hidden="true"
+                class="m-auto mt-2 h-0.5 w-6 rounded bg-desertSand transition duration-300"
+              ></div>
+            </label>
+          </div>
+          <div
+            class="navmenu hidden w-full flex-wrap justify-end items-center mb-16 mx-6 space-y-20 p-6 rounded-xl shadow-lg bg-blue-600 lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:w-7/12 lg:shadow-none"
+          >
+            <div class="text-white lg:pr-4">
+              <ul
+                class="space-y-6 tracking-wide font-primaryHeader text-lg lg:text-sm lg:flex lg:space-y-0"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block md:px-4 transition text-brandColor border-l-2 border-brandColor"
+                  >
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <div class="dropdown inline-block relative">
+                    <button
+                      class="font-primaryHeader px-4 inline-flex items-center hover:border-l-2 hover:border-brandColor"
+                    >
+                      <a href="pages/services-select.html">
+                        <span class="mr-1">Services</span></a
+                      >
+                      <svg
+                        class="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden pt-1 text-black">
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/services-web-design.html"
+                          >Web Design</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/services-photography.html"
+                          >Photography</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/services-media-consult.html"
+                          >Media Consultations</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/services-graphic-design.html"
+                          >Graphic Design</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/services-brand-development.html"
+                          >Brand Development</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/services-web-maintenance.html"
+                          >Web Maintenance</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown inline-block relative">
+                    <button
+                      class="font-primaryHeader px-4 inline-flex items-center hover:border-l-2 hover:border-brandColor"
+                    >
+                      <a href="pages/about-company.html">
+                        <span class="mr-1">About</span></a
+                      >
+                      <svg
+                        class="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden pt-1 text-black">
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/gallery.html"
+                          >The Gallery</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/about-andrew.html"
+                          >Andrew</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/about-adrianna.html"
+                          >Adrianna</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/about-tyson.html"
+                          >Tyson</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown inline-block relative">
+                    <button
+                      class="font-primaryHeader px-4 inline-flex items-center hover:border-l-2 hover:border-brandColor"
+                    >
+                      <a href="pages/blog-select.html">
+                        <span class="mr-1">Blog</span></a
+                      >
+                      <svg
+                        class="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden pt-1 text-black">
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/blog-coffee-with-andrew.html"
+                          >Coffee Blog</a
+                        >
+                      </li>
+                      <li class="">
+                        <a
+                          class="bg-gray-50 hover:border-l-2 hover:border-brandColor py-2 px-4 block whitespace-no-wrap"
+                          href="pages/blog-tea-with-adrianna.html"
+                          >Tea Blog</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a href="pages/store.html" class="block md:px-4 transition">
+                    <span>Merch</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="pages/contact.html"
+                    class="block md:px-4 transition hover:text-brandColor hover:border-l-2 hover:border-brandColor"
+                  >
+                    <span>Contact</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="w-full space-y-2 border-white flex flex-col -ml-1 sm:flex-row lg:space-y-0 md:w-max lg:border-l"
+            >
+              <a href="pages/sign-up.html">
+                <button
+                  type="button"
+                  title="Learn more"
+                  class="w-full py-2.5 px-5 text-center rounded-full transition active:bg-sky-200 focus:bg-sky-100 sm:w-max"
+                >
+                  <span
+                    class="block text-white font-primaryHeader lg:text-sm hover:text-brandColor hover:border-l-2 hover:border-brandColor px-2"
+                  >
+                    Sign up
+                  </span>
+                </button></a
+              >
+              <a href="pages/login.html">
+                <button
+                  type="button"
+                  title="Learn more"
+                  class="w-full py-2.5 px-5 text-center rounded-full transition bg-gradient-to-b from-blue-400 to-blue-300 active:from-blue-300 focus:from-blue-400 sm:w-max"
+                >
+                  <span
+                    class="block text-white font-secondaryHeader lg:text-sm"
+                  >
+                    Login
+                  </span>
+                </button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Background image -->
+    <div
+      class="relative overflow-hidden bg-no-repeat bg-cover"
+      style="
+        background-position: 50%;
+        background-image: url('img/stock/coloradoMonument-2.jpg');
+        height: 100vh;
+      "
+    >
+      <div
+        class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed"
+        style="background-color: rgba(0, 0, 0, 0.7)"
+      >
+        <div class="flex justify-center items-center h-full">
+          <div
+            class="text-start text-white px-6 md:px-12 mx-10 max-w-7xl md:mx-40"
+          >
+            <h3
+              class="text-md md:text-3xl mb-8 font-secondaryHeader border-l-2 border-brandColor px-2"
+            >
+              Elevate Your Business
+            </h3>
+
+            <h1
+              class="text-2xl text-white md:text-3xl lg:text-4xl text-start mt-0 mb-6 font-primaryHeader"
+            >
+              On average, business's that wait too long to upgrade fall behind
+              the competition,
+              <span class="font-secondaryHeader border-b-2 text-brandColor"
+                >don't be average.</span
+              >
+              Make the upgrade today!
+            </h1>
+            <button
+              type="button"
+              title="Learn more"
+              class="w-full py-2.5 px-5 text-center rounded-full transition bg-gradient-to-b from-brandColor to-blue-700 active:from-blue-300 focus:from-blue-400 sm:w-max"
+            >
+              <span
+                class="block text-white font-secondaryHeader text-sm lg:text-lg"
+              >
+                Upgrade Now
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="vl"></div>
+    </div>
+    <!-- Background image -->
+  </header>
+</body>
+</html>
