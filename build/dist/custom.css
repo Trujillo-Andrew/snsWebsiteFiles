@@ -1,3 +1,10 @@
+/* Global */
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
 /* Delayed Reveal Top */
 .reveal{
   position: relative;
