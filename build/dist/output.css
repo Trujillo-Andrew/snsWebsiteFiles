@@ -664,6 +664,10 @@ video {
   z-index: 20;
 }
 
+.z-0 {
+  z-index: 0;
+}
+
 .order-last {
   order: 9999;
 }
@@ -869,6 +873,10 @@ video {
   margin-left: -0.25rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -959,6 +967,10 @@ video {
 
 .h-14 {
   height: 3.5rem;
+}
+
+.h-40 {
+  height: 10rem;
 }
 
 .w-1\/4 {
@@ -1379,6 +1391,11 @@ video {
   background-color: transparent;
 }
 
+.bg-indigo-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
@@ -1413,6 +1430,10 @@ video {
 
 .bg-fixed {
   background-attachment: fixed;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .bg-no-repeat {
@@ -1670,6 +1691,11 @@ video {
   line-height: 1rem;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1789,6 +1815,11 @@ video {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-indigo-500 {
+  --tw-text-opacity: 1;
+  color: rgb(99 102 241 / var(--tw-text-opacity));
+}
+
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1802,6 +1833,14 @@ video {
 .placeholder-white::placeholder {
   --tw-placeholder-opacity: 1;
   color: rgb(255 255 255 / var(--tw-placeholder-opacity));
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .shadow-lg {
@@ -1933,6 +1972,14 @@ video {
 .hover\:text-desertSand:hover {
   --tw-text-opacity: 1;
   color: rgb(213 189 175 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover {
+  opacity: 1;
+}
+
+.hover\:opacity-50:hover {
+  opacity: 0.5;
 }
 
 .focus\:border-desertSand:focus {
@@ -2215,6 +2262,11 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2399,6 +2451,14 @@ video {
 
   .md\:p-12 {
     padding: 3rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
   }
 
   .md\:px-0 {
@@ -2803,6 +2863,10 @@ video {
 
   .xl\:w-80 {
     width: 20rem;
+  }
+
+  .xl\:w-1\/4 {
+    width: 25%;
   }
 
   .xl\:grid-cols-5 {
