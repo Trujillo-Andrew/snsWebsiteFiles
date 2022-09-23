@@ -262,7 +262,7 @@
               Order Form
             </h2>
           </div>
-          <form name="Custom Order Form" netlify>
+          <form name="Custom Order Form" netlify data-netlify-recaptcha="true">
             <!-- Location Section -->
             <div class="md:flex mb-8 revealRight">
               <div class="md:w-1/3">
@@ -282,7 +282,8 @@
                   <input
                     class="w-full shadow-inner p-4 border-0"
                     type="text"
-                    name="name"
+                    name="Customer Name"
+                    required
                     placeholder="John Doe"
                   />
                 </div>
@@ -295,7 +296,7 @@
                     <input
                       class="w-full shadow-inner p-4 border-0"
                       type="text"
-                      name="address_street"
+                      name="Delivery Address"
                       placeholder="123 My Street"
                     />
                   </div>
@@ -307,7 +308,7 @@
                     <input
                       class="w-full shadow-inner p-4 border-0"
                       type="text"
-                      name="address_number"
+                      name="Address Number"
                       placeholder="#"
                     />
                   </div>
@@ -321,7 +322,7 @@
                     <input
                       class="w-full shadow-inner p-4 border-0"
                       type="text"
-                      name="lat"
+                      name="Business Name"
                       placeholder="My Business"
                     />
                   </div>
@@ -333,7 +334,7 @@
                     <input
                       class="w-full shadow-inner p-4 border-0"
                       type="tel"
-                      name="busPhone"
+                      name="Business Phone Number"
                       placeholder="(970) 858-1234"
                     />
                   </div>
@@ -354,7 +355,7 @@
                   <input
                     class="w-full shadow-inner p-4 border-0"
                     type="tel"
-                    name="phone"
+                    name="Customer Phone Number"
                     placeholder="(555) 555-5555"
                   />
                 </div>
@@ -363,7 +364,7 @@
                     class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
                     >Occasion</label
                   >
-                  <select name="" id="" class="w-full border-0 p-4">
+                  <select name="Occasion Type" id="" class="w-full border-0 p-4">
                     <option value="">Choose Occasion</option>
                     <option value="Delivery">Delivery</option>
                     <option value="PickUp">Pick Up</option>
@@ -377,7 +378,7 @@
                   <input
                     class="w-full shadow-inner p-4 border-0"
                     type="email"
-                    name="email"
+                    name="Customer Email"
                     placeholder="contact@acme.co"
                   />
                 </div>
@@ -404,7 +405,7 @@
                       <input
                         class="flex-1 shadow-inner p-4 border-0"
                         type="date"
-                        name="dueDate"
+                        name="Due Date"
                         placeholder=""
                       />
                     </div>
@@ -422,7 +423,7 @@
                       <input
                         class="flex-1 shadow-inner p-4 border-0"
                         type="time"
-                        name="dueTime"
+                        name="Due Time"
                         placeholder=""
                       />
                     </div>
@@ -441,7 +442,7 @@
                       <select
                         class="flex-1 shadow-inner p-4 border-0"
                         type="text"
-                        name="instagram"
+                        name="Cake Flavor"
                         placeholder="acmeco"
                       >
                         <option value="">Select One</option>
@@ -465,7 +466,7 @@
                       <select
                         class="flex-1 shadow-inner p-4 border-0"
                         type="text"
-                        name="yelp"
+                        name="Filling"
                         placeholder=""
                       >
                         <option>Select One</option>
@@ -497,7 +498,7 @@
                         class="flex-1 shadow-inner p-4 border-0"
                         type="text"
                         name="yelp"
-                        placeholder=""
+                        placeholder="Product"
                       >
                       <option>Select One</option>
                       <option value="Cupcakes">Cupcakes</option>
@@ -527,6 +528,7 @@
               <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
                 <textarea
                   class="w-full shadow-inner p-4 border-0"
+                  name="Additional Information"
                   placeholder="Please leave us details on any special requests for your order here."
                   rows="6"
                 ></textarea>
@@ -534,6 +536,7 @@
             </div>
 
             <!-- Submit Button -->
+            <div class="my-5" data-netlify-recaptcha="true"></div>
             <div
               class="md:flex mb-6 border border-t-1 border-b-0 border-x-0 border-cream-dark"
             >
