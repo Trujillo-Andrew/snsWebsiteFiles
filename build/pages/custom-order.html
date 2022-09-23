@@ -355,6 +355,7 @@
                   <input
                     class="w-full shadow-inner p-4 border-0"
                     type="tel"
+                    required
                     name="Customer Phone Number"
                     placeholder="(555) 555-5555"
                   />
@@ -364,7 +365,7 @@
                     class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
                     >Occasion</label
                   >
-                  <select name="Occasion Type" id="" class="w-full border-0 p-4">
+                  <select name="Occasion Type" required id="" class="w-full border-0 p-4">
                     <option value="">Choose Occasion</option>
                     <option value="Delivery">Delivery</option>
                     <option value="PickUp">Pick Up</option>
@@ -378,6 +379,7 @@
                   <input
                     class="w-full shadow-inner p-4 border-0"
                     type="email"
+                    required
                     name="Customer Email"
                     placeholder="contact@acme.co"
                   />
@@ -405,6 +407,7 @@
                       <input
                         class="flex-1 shadow-inner p-4 border-0"
                         type="date"
+                        required
                         name="Due Date"
                         placeholder=""
                       />
@@ -423,6 +426,7 @@
                       <input
                         class="flex-1 shadow-inner p-4 border-0"
                         type="time"
+                        required
                         name="Due Time"
                         placeholder=""
                       />
@@ -441,9 +445,8 @@
                       ></span>
                       <select
                         class="flex-1 shadow-inner p-4 border-0"
-                        type="text"
                         name="Cake Flavor"
-                        placeholder="acmeco"
+                        placeholder="Select One"
                       >
                         <option value="">Select One</option>
                         <option value="Vanilla">Vanilla</option>
@@ -466,6 +469,7 @@
                       <select
                         class="flex-1 shadow-inner p-4 border-0"
                         type="text"
+                        required
                         name="Filling"
                         placeholder=""
                       >
@@ -480,6 +484,7 @@
                         <option value="Nutella">Nutella</option>
                         <option value="Biscoff">Biscoff</option>
                         <option value="Other">Other</option>
+                        <option value="None">None</option>
                       </select>
                     </div>
                   </div>
@@ -497,7 +502,8 @@
                       <select
                         class="flex-1 shadow-inner p-4 border-0"
                         type="text"
-                        name="yelp"
+                        name="Product"
+                        required
                         placeholder="Product"
                       >
                       <option>Select One</option>
