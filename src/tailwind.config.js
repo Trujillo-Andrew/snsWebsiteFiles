@@ -13,6 +13,8 @@ module.exports = {
         champagnePink: '#E3D5CA',
         desertSand: '#D5BDAF',
         trujilloMediaBrandColor: '#34aeef',
+
+        
   
       },
       fontFamily: {
