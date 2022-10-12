@@ -85,4 +85,17 @@ window.addEventListener("scroll", revealBottom);
 var today = new Date().toISOString().split('T')[0];
 document.getElementsByName("dueDate")[0].setAttribute('min', today);
 
+// Conditional Form Fields
+
+$(function(){
+  $('#hide1').hide();$('#occasion').change(function() {
+      if ($('#occasion').val() == 'Delivery') {
+          $('#hide1').show();
+      }
+      else {
+          $('#hide1').hide();
+      }
+  });
+});
+
 
