@@ -16,35 +16,52 @@
       href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&family=Quicksand&family=Rochester&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-7HE3ZMNJCG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-7HE3ZMNJCG");
+    </script>
+    
     <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
+      var chatbox = document.getElementById("fb-customer-chat");
       chatbox.setAttribute("page_id", "102500051967986");
       chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!-- Your SDK code -->
     <script>
-      window.fbAsyncInit = function() {
+      window.fbAsyncInit = function () {
         FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
+          xfbml: true,
+          version: "v15.0",
         });
       };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      })(document, "script", "facebook-jssdk");
     </script>
 
     <title>Home | Sweet & Simple</title>
@@ -127,7 +144,7 @@
                       <li>
                         <a
                           href="pages/about.html"
-                          class="block md:px-4 pb-1 transition text-xl  hover:border-b-2 hover:border-paleSilver"
+                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
                         >
                           <span>About</span>
                         </a>
@@ -300,7 +317,12 @@
             </h1>
 
             <p class="max-w-md font-bodyText xl:text-lg leading-relaxed">
-              Sweet and Simple Cupcakery was founded in 2022 Fruita resident Connie Aguilar. A lifelong dream come true, Connie now operates Fruita's choice cupcakery providing everyone with a little slice of Heaven. Connie operates the cupcakery with her daughters, Miranda and Olivia, they help to bring delicious cupcakes and outstanding customer service. 
+              Sweet and Simple Cupcakery was founded in 2022 Fruita resident
+              Connie Aguilar. A lifelong dream come true, Connie now operates
+              Fruita's choice cupcakery providing everyone with a little slice
+              of Heaven. Connie operates the cupcakery with her daughters,
+              Miranda and Olivia, they help to bring delicious cupcakes and
+              outstanding customer service.
             </p>
           </div>
 
@@ -340,9 +362,7 @@
 
         <div
           class="flex flex-col md:flex-row justify-between items-center gap-8"
-        >
-         
-        </div>
+        ></div>
       </section>
     </div>
 
@@ -593,8 +613,6 @@
               <!-- social - end -->
             </div>
 
-            
-
             <!-- nav - start -->
             <div>
               <div
@@ -705,13 +723,11 @@
         <div
           class="flex flex-col md:flex-row justify-between border-t border-white px-5"
         >
-          <div
-            class=" border-white text-sm text-center md:text-start py-8"
-          >
+          <div class="border-white text-sm text-center md:text-start py-8">
             © 2022 - <span> <span id="copyYear"></span></span> Sweet and Simple
             Cupcakery. All rights reserved.
           </div>
-          <div class=" text-sm text-center md:text-end py-8">
+          <div class="text-sm text-center md:text-end py-8">
             <a href="https://trujillomedia.com" target="_blank">
               A website by:
               <span class="underline text-trujilloMediaBrandColor"
