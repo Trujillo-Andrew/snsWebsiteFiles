@@ -80,22 +80,21 @@ function revealBottom() {
 
 window.addEventListener("scroll", revealBottom);
 
-// JS Date Script
+// scrollbar animation
 
-var today = new Date().toISOString().split('T')[0];
-document.getElementsByName("dueDate")[0].setAttribute('min', today);
 
-// Conditional Form Fields
+var nav = document.querySelector('#nav');
+window.addEventListener('scroll', function() {
+  if (window.pageYOffset > 800) {
+    nav.classList.add('bg-desertSand', 'shadow');
+  } else {
+    nav.classList.remove('bg-desertSand', 'shadow')
+  }
+} )
 
-$(function(){
-  $('#hide1').hide();$('#occasion').change(function() {
-      if ($('#occasion').val() == 'Delivery') {
-          $('#hide1').show();
-      }
-      else {
-          $('#hide1').hide();
-      }
-  });
-});
+
+
+
+
 
 
