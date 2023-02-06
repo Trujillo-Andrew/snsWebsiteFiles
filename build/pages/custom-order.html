@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+555555(-108.7338,39.1583)/-108.7336,39.1588,16.25,0/300x200?access_token=pk.eyJ1Ijoia3VzbWFjayIsImEiOiJjbDBxYnhsbGUxYXc1M2NrYW1zNzRrY3ZwIn0.1FF7XfpJREW-kMfNdZl70g"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -70,128 +71,15 @@
   </head>
   <body>
     <header>
-      <!-- NavBar -->
+       <!--Navigation bar-->
+       <div id="nav-placeholder"></div>
 
-      <input
-        type="checkbox"
-        name="hbr"
-        id="hbr"
-        class="hbr peer hidden"
-        aria-hidden="true"
-      />
-      <nav
-        class="fixed z-10 w-full border-b md:bg-opacity-70 backdrop-blur bg-transparent navbar peer-checked:navbar-active md:absolute md:bg-transparent"
-      >
-        <div class="container m-auto px-2 md:px-12 lg:px-7">
-          <div
-            class="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0"
-          >
-            <div
-              class="w-full px-6 flex justify-between lg:mx-auto lg:w-max md:px-0"
-            >
-              <a
-                href="../index.html"
-                aria-label="logo"
-                class="flex space-x-2 items-center"
-              >
-                <img
-                  src="../img/brand/SnS-fontOnly-bFont.png"
-                  class="w-64 my-2"
-                  alt="sweet and simple logo"
-                  width="144"
-                  height="48"
-                />
-              </a>
-              <label
-                for="hbr"
-                class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
-              >
-                <div
-                  aria-hidden="true"
-                  class="m-auto h-0.5 w-6 rounded bg-paleSilver transition duration-300"
-                ></div>
-                <div
-                  aria-hidden="true"
-                  class="m-auto mt-2 h-0.5 w-6 rounded bg-champagnePink transition duration-300"
-                ></div>
-              </label>
-            </div>
-            <div class="container m-auto px-2 md:px-12 lg:px-7">
-              <div
-                class="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0"
-              >
-                <div
-                  class="navmenu hidden w-full flex-wrap justify-around items-center mb-16 space-y-20 p-6 rounded-xl shadow-lg bg-linen lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:shadow-none"
-                >
-                  <div class="lg:pr-4">
-                    <ul
-                      class="space-y-6 tracking-wide font-secondaryHeader text-lg lg:text-sm lg:flex lg:space-y-0"
-                    >
-                      <li>
-                        <a
-                          href="../index.html"
-                          class="block md:px-4 pb-1 hover:border-b-2 hover:border-paleSilver transition text-xl"
-                        >
-                          <span>Home</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="custom-order.html"
-                          class="block md:px-4 pb-1 transition border-b-2 border-paleSilver text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>Order</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="about.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>About</span>
-                        </a>
-                      </li>
-                      <!-- <li>
-                        <a
-                          href="cupcake-gallery.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>Gallery</span>
-                        </a>
-                      </li> -->
-                      <li>
-                        <a
-                          href="reviews.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>Reviews</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="faq.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>FAQ</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a
-                          href="contact.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>Contact Us</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+       <script>
+         $(function () {
+           $("#nav-placeholder").load("navbar.html");
+         });
+       </script>
+       <!--end of Navigation bar-->
 
       <!-- Feature Section -->
 

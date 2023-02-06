@@ -1,6 +1,6 @@
 document.getElementById("copyYear").innerHTML = new Date().getFullYear();
 
-// Reveal Top JS
+// 
 
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");

@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="What our community has to say about our delicious cupcakes!">
+    <meta
+      name="description"
+      content="What our community has to say about our delicious cupcakes!"
+    />
     <link rel="stylesheet" href="../dist/output.css" />
     <link rel="stylesheet" href="../dist/custom.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,10 +20,16 @@
       rel="stylesheet"
       href="https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+555555(-108.7338,39.1583)/-108.7336,39.1588,16.25,0/300x200?access_token=pk.eyJ1Ijoia3VzbWFjayIsImEiOiJjbDBxYnhsbGUxYXc1M2NrYW1zNzRrY3ZwIn0.1FF7XfpJREW-kMfNdZl70g"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <title>Reviews | Sweet & Simple Cupcakery</title>
     <!-- Google tag (gtag.js) -->
     <script
@@ -68,145 +77,45 @@
         fjs.parentNode.insertBefore(js, fjs);
       })(document, "script", "facebook-jssdk");
     </script>
-
   </head>
   <body>
     <header>
-      <!-- NavBar -->
+     <!--Navigation bar-->
+     <div id="nav-placeholder"></div>
 
-      <input
-        type="checkbox"
-        name="hbr"
-        id="hbr"
-        class="hbr peer hidden"
-        aria-hidden="true"
-      />
-      <nav
-        class="fixed z-10 w-full border-b md:bg-opacity-70 backdrop-blur bg-transparent navbar peer-checked:navbar-active md:absolute md:bg-transparent"
-      >
-        <div class="container m-auto px-2 md:px-12 lg:px-7">
-          <div
-            class="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0"
-          >
-            <div
-              class="w-full px-6 flex justify-between lg:mx-auto lg:w-max md:px-0"
-            >
-              <a
-                href="../index.html"
-                aria-label="logo"
-                class="flex space-x-2 items-center"
-              >
-                <img
-                  src="../img/brand/SnS-fontOnly-bFont.png"
-                  class="w-64 my-2"
-                  alt="sweet and simple logo"
-                  width="144"
-                  height="48"
-                />
-              </a>
-              <label
-                for="hbr"
-                class="peer-checked:hamburger block relative z-20 p-6 -mr-6 cursor-pointer lg:hidden"
-              >
-                <div
-                  aria-hidden="true"
-                  class="m-auto h-0.5 w-6 rounded bg-paleSilver transition duration-300"
-                ></div>
-                <div
-                  aria-hidden="true"
-                  class="m-auto mt-2 h-0.5 w-6 rounded bg-champagnePink transition duration-300"
-                ></div>
-              </label>
-            </div>
-            <div class="container m-auto px-2 md:px-12 lg:px-7">
-              <div
-                class="flex flex-wrap items-center justify-between gap-6 md:py-3 md:gap-0"
-              >
-                <div
-                  class="navmenu hidden w-full flex-wrap justify-around items-center mb-16 space-y-20 p-6 rounded-xl shadow-lg bg-linen lg:space-y-0 lg:p-0 lg:m-0 lg:flex md:flex-nowrap lg:bg-transparent lg:shadow-none"
-                >
-                  <div class="lg:pr-4">
-                    <ul
-                      class="space-y-6 tracking-wide  font-secondaryHeader text-lg lg:text-sm lg:flex lg:space-y-0"
-                    >
-                      <li>
-                        <a
-                          href="../index.html"
-                          class="block md:px-4 pb-1 transition hover:border-b-2 hover:border-paleSilver text-xl"
-                        >
-                          <span>Home</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="custom-order.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>Order</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="about.html"
-                          class="block md:px-4 pb-1 transition text-xl  hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>About</span>
-                        </a>
-                      </li>
-                      <!-- <li>
-                        <a
-                          href="cupcake-gallery.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>Gallery</span>
-                        </a>
-                      </li> -->
-                      <li>
-                        <a
-                          href="reviews.html"
-                          class="block md:px-4 pb-1 transition text-xl border-b-2 border-paleSilver hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>Reviews</span>
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="faq.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>FAQ</span>
-                        </a>
-                      </li>
-
-                      <li>
-                        <a
-                          href="contact.html"
-                          class="block md:px-4 pb-1 transition text-xl hover:border-b-2 hover:border-paleSilver"
-                        >
-                          <span>Contact Us</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
+     <script>
+       $(function () {
+         $("#nav-placeholder").load("navbar.html");
+       });
+     </script>
+     <!--end of Navigation bar-->
 
       <!-- Feature Section -->
 
-      <section class=" font-bodyText">
-        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 class="title-font sm:text-5xl text-4xl mb-4 font-secondaryHeader mt-5 lg:mt-0 border-b-2 border-desertSand  ">Reviews
+      <section class="font-bodyText">
+        <div
+          class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+        >
+          <div
+            class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          >
+            <h1
+              class="title-font sm:text-5xl text-4xl mb-4 font-secondaryHeader mt-5 lg:mt-0 border-b-2 border-desertSand"
+            >
+              Reviews
             </h1>
-            <p class="mb-8 leading-relaxed max-w-sm">As a community we love to read all of the wondeful things you have to say about our cupcakes, take a moment and read through some of our favorites</p>
-            
+            <p class="mb-8 leading-relaxed max-w-sm">
+              As a community we love to read all of the wondeful things you have
+              to say about our cupcakes, take a moment and read through some of
+              our favorites
+            </p>
           </div>
           <div class="lg:max-w-lg lg:w-full mt-20 md:w-1/2 shadow-2xl w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="../img/spotlight_photos/community_spotlight_2.jpeg">
+            <img
+              class="object-cover object-center rounded"
+              alt="hero"
+              src="../img/spotlight_photos/community_spotlight_2.jpeg"
+            />
           </div>
         </div>
       </section>
@@ -218,19 +127,35 @@
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4 text-center">
           <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">1.6K+</h2>
+            <h2
+              class="title-font font-medium sm:text-4xl text-3xl text-gray-900"
+            >
+              1.6K+
+            </h2>
             <p class="leading-relaxed">Satisfied Customers</p>
           </div>
           <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">30+</h2>
+            <h2
+              class="title-font font-medium sm:text-4xl text-3xl text-gray-900"
+            >
+              30+
+            </h2>
             <p class="leading-relaxed">Delicious Treats</p>
           </div>
           <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">50+</h2>
+            <h2
+              class="title-font font-medium sm:text-4xl text-3xl text-gray-900"
+            >
+              50+
+            </h2>
             <p class="leading-relaxed">5 Star Reviews</p>
           </div>
           <div class="p-4 sm:w-1/4 w-1/2">
-            <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">3500+</h2>
+            <h2
+              class="title-font font-medium sm:text-4xl text-3xl text-gray-900"
+            >
+              3500+
+            </h2>
             <p class="leading-relaxed">Orders Fulfilled</p>
           </div>
         </div>
@@ -239,12 +164,9 @@
 
     <!-- Testimonials -->
 
-    
-
     <section class="bg-isabelline">
-      
       <!-- Reviews Section 1 -->
-    
+
       <div
         class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:px-20 px-10 py-20 gap-6"
       >
@@ -253,9 +175,7 @@
           <div
             class="group w-full bg-white revealLeft overflow-hidden relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <div
-              class="   flex flex-col items-center"
-            >
+            <div class="flex flex-col items-center">
               <svg
                 width="26"
                 height="27"
@@ -364,17 +284,15 @@
               </svg>
             </div>
           </div>
-          <div class="flex flex-col items-center overflow-hidden reavel justify-center mt-10">
+          <div
+            class="flex flex-col items-center overflow-hidden reavel justify-center mt-10"
+          >
             <img
               src="../img/reviews/jamesM.png"
               alt="profile picture"
               class="w-12 h-12"
             />
-            <p
-              class="text-base font-semibold leading-4 my-2 "
-            >
-              James Millsaps
-            </p>
+            <p class="text-base font-semibold leading-4 my-2">James Millsaps</p>
             <!-- <p
               class="text-base leading-4 text-center  "
             >
@@ -382,14 +300,12 @@
             </p> -->
           </div>
         </div>
-          <!-- Review 2 -->
+        <!-- Review 2 -->
         <div class="reveal overflow-hidden">
           <div
-            class="group w-full bg-white  relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
+            class="group w-full bg-white relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <div
-              class="   flex flex-col items-center"
-            >
+            <div class="flex flex-col items-center">
               <svg
                 class=""
                 width="26"
@@ -420,7 +336,10 @@
                 </defs>
               </svg>
               <p class="xl:w-80 text-base leading-normal text-center mt-4">
-                This is the cutest little cupcake shop! The cupcakes were amazing! We had one of each and our family favorite was the coco loco (the coconut one) and the lemon drop, which was a close second. Definitely recommend this cute family owned business.
+                This is the cutest little cupcake shop! The cupcakes were
+                amazing! We had one of each and our family favorite was the coco
+                loco (the coconut one) and the lemon drop, which was a close
+                second. Definitely recommend this cute family owned business.
               </p>
             </div>
             <div
@@ -505,11 +424,7 @@
               alt="profile picture"
               class="w-12 h-12"
             />
-            <p
-              class="text-base font-semibold leading-4 my-2 "
-            >
-              Alysia Clark
-            </p>
+            <p class="text-base font-semibold leading-4 my-2">Alysia Clark</p>
             <!-- <p
               class="text-base leading-4 text-center  "
             >
@@ -523,9 +438,7 @@
           <div
             class="group w-full bg-white overflow-hidden relative flex flex-col reavel items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <div
-              class="   flex flex-col items-center"
-            >
+            <div class="flex flex-col items-center">
               <svg
                 width="26"
                 height="27"
@@ -555,7 +468,8 @@
                 </defs>
               </svg>
               <p class="xl:w-80 text-base leading-normal text-center mt-4">
-                This place is a great little cupcake shop!  If you want a delicious snack stop here.  Their churro bites are my favorite.
+                This place is a great little cupcake shop! If you want a
+                delicious snack stop here. Their churro bites are my favorite.
               </p>
             </div>
             <div
@@ -634,22 +548,18 @@
               </svg>
             </div>
           </div>
-          <div class="flex flex-col items-center revealLeft overflow-hidden justify-center mt-10">
+          <div
+            class="flex flex-col items-center revealLeft overflow-hidden justify-center mt-10"
+          >
             <img
               src="../img/reviews/jesseL.png"
               alt="profile picture"
               class="w-12 h-12"
             />
-            <p
-              class="text-base font-semibold leading-4 my-2 "
-            >
+            <p class="text-base font-semibold leading-4 my-2">
               Jesse LongSoldier
             </p>
-            <p
-              class="text-base leading-4 text-center  "
-            >Local Guide
-              
-            </p>
+            <p class="text-base leading-4 text-center">Local Guide</p>
           </div>
         </div>
 
@@ -658,9 +568,7 @@
           <div
             class="group w-full bg-white overflow-hidden revealLeft relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <div
-              class="   flex flex-col items-center"
-            >
+            <div class="flex flex-col items-center">
               <svg
                 width="26"
                 height="27"
@@ -690,7 +598,11 @@
                 </defs>
               </svg>
               <p class="xl:w-80 text-base leading-normal text-center mt-4">
-                They knocked it outside of the park. I needed 24 cupcakes and wanted a variety of flavors. These ladies didn’t hesitate to make it happen and we’re very kind. The cupcakes were delicious and enjoyed by everyone. I will definitely use them again. Thank you Simply Sweet for coming to the rescue.
+                They knocked it outside of the park. I needed 24 cupcakes and
+                wanted a variety of flavors. These ladies didn’t hesitate to
+                make it happen and we’re very kind. The cupcakes were delicious
+                and enjoyed by everyone. I will definitely use them again. Thank
+                you Simply Sweet for coming to the rescue.
               </p>
             </div>
             <div
@@ -769,33 +681,25 @@
               </svg>
             </div>
           </div>
-          <div class="flex flex-col reavel overflow-hidden items-center justify-center mt-10">
+          <div
+            class="flex flex-col reavel overflow-hidden items-center justify-center mt-10"
+          >
             <img
               src="../img/reviews/christyG.png"
               alt="profile picture"
               class="w-12 h-12"
             />
-            <p
-              class="text-base font-semibold leading-4 my-2 "
-            >
-              Christy Gray
-            </p>
-            <p
-              class="text-base leading-4 text-center  "
-            >
-              
-            </p>
+            <p class="text-base font-semibold leading-4 my-2">Christy Gray</p>
+            <p class="text-base leading-4 text-center"></p>
           </div>
         </div>
 
-          <!-- Review 5 -->
+        <!-- Review 5 -->
         <div class="reveal overflow-hidden">
           <div
-            class="group w-full bg-white  relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
+            class="group w-full bg-white relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <div
-              class="   flex flex-col items-center"
-            >
+            <div class="flex flex-col items-center">
               <svg
                 class=""
                 width="26"
@@ -826,7 +730,8 @@
                 </defs>
               </svg>
               <p class="xl:w-80 text-base leading-normal text-center mt-4">
-                Tres Leches was RIDICULOUSLY delicious! Can’t wait to try their other flavors
+                Tres Leches was RIDICULOUSLY delicious! Can’t wait to try their
+                other flavors
               </p>
             </div>
             <div
@@ -911,16 +816,10 @@
               alt="profile picture"
               class="w-12 h-12"
             />
-            <p
-              class="text-base font-semibold leading-4 my-2 "
-            >
+            <p class="text-base font-semibold leading-4 my-2">
               Jessica Downing-Ford
             </p>
-            <p
-              class="text-base leading-4 text-center  "
-            >
-              
-            </p>
+            <p class="text-base leading-4 text-center"></p>
           </div>
         </div>
 
@@ -929,9 +828,7 @@
           <div
             class="group w-full bg-white overflow-hidden reavel relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <div
-              class="   flex flex-col items-center"
-            >
+            <div class="flex flex-col items-center">
               <svg
                 width="26"
                 height="27"
@@ -961,7 +858,9 @@
                 </defs>
               </svg>
               <p class="xl:w-80 text-base leading-normal text-center mt-4">
-                Best cupcakes in the world! No, but seriously tho, they're REALLY good. The owners are super friendly & helpful. Highly recommended!
+                Best cupcakes in the world! No, but seriously tho, they're
+                REALLY good. The owners are super friendly & helpful. Highly
+                recommended!
               </p>
             </div>
             <div
@@ -1040,845 +939,798 @@
               </svg>
             </div>
           </div>
-          <div class="flex flex-col revealLeft overflow-hidden items-center justify-center mt-10">
+          <div
+            class="flex flex-col revealLeft overflow-hidden items-center justify-center mt-10"
+          >
             <img
               src="../img/reviews/melissaS.png"
               alt="profile picture"
               class="w-12 h-12"
             />
-            <p
-              class="text-base font-semibold leading-4 my-2 "
-            >
-              Melissa Shaw
-            </p>
-            <p
-              class="text-base leading-4 text-center  "
-            >
-              
-            </p>
+            <p class="text-base font-semibold leading-4 my-2">Melissa Shaw</p>
+            <p class="text-base leading-4 text-center"></p>
           </div>
         </div>
       </div>
 
       <!-- Reviews Section 2 -->
       <div
-      class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:px-20 px-10 py-20 gap-6"
-    >
-      <!-- Review 1 -->
-      <div>
-        <div
-          class="group w-full bg-white revealLeft overflow-hidden relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
-        >
+        class="container mx-auto grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:px-20 px-10 py-20 gap-6"
+      >
+        <!-- Review 1 -->
+        <div>
           <div
-            class="   flex flex-col items-center"
+            class="group w-full bg-white revealLeft overflow-hidden relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <svg
-              width="26"
-              height="27"
-              viewBox="0 0 26 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="24.5767"
-                    height="27"
-                    fill="white"
-                    transform="translate(25.2578 27) rotate(-180)"
+            <div class="flex flex-col items-center">
+              <svg
+                width="26"
+                height="27"
+                viewBox="0 0 26 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
+                    fill="currentColor"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="xl:w-80 text-base leading-normal text-center mt-4">
-              Strawberry and cream cupcake is SOOO good! Glad to see a place like this in Fruita. ❤️ 
-            </p>
+                  <path
+                    d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="24.5767"
+                      height="27"
+                      fill="white"
+                      transform="translate(25.2578 27) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="xl:w-80 text-base leading-normal text-center mt-4">
+                Strawberry and cream cupcake is SOOO good! Glad to see a place
+                like this in Fruita. ❤️
+              </p>
+            </div>
+            <div
+              class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            >
+              <svg
+                width="34"
+                height="28"
+                viewBox="0 0 34 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_dd)">
+                  <path
+                    d="M17 19L28.2583 3.25H5.74167L17 19Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_dd"
+                    x="0.741699"
+                    y="0.25"
+                    width="32.5167"
+                    height="27.75"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feMorphology
+                      radius="1"
+                      operator="erode"
+                      in="SourceAlpha"
+                      result="effect1_dropShadow"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow"
+                    />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="effect1_dropShadow"
+                      result="effect2_dropShadow"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect2_dropShadow"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
           </div>
           <div
-            class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            class="flex flex-col items-center overflow-hidden reveal justify-center mt-10"
           >
-            <svg
-              width="34"
-              height="28"
-              viewBox="0 0 34 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_dd)">
-                <path
-                  d="M17 19L28.2583 3.25H5.74167L17 19Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_dd"
-                  x="0.741699"
-                  y="0.25"
-                  width="32.5167"
-                  height="27.75"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="erode"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="3" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2.5" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="effect1_dropShadow"
-                    result="effect2_dropShadow"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect2_dropShadow"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
+            <img
+              src="../img/reviews/heatherD.png"
+              alt="profile picture"
+              class="w-12 h-12"
+            />
+            <p class="text-base font-semibold leading-4 my-2">Heather D</p>
+            <p class="text-base leading-4 text-center">Google Local Guide</p>
           </div>
         </div>
-        <div class="flex flex-col items-center overflow-hidden reveal justify-center mt-10">
-          <img
-            src="../img/reviews/heatherD.png"
-            alt="profile picture"
-            class="w-12 h-12"
-          />
-          <p
-            class="text-base font-semibold leading-4 my-2 "
-          >
-            Heather D
-          </p>
-          <p
-            class="text-base leading-4 text-center  "
-          >
-            Google Local Guide
-          </p>
-        </div>
-      </div>
         <!-- Review 2 -->
-      <div class="revealBottom overflow-hidden">
-        <div
-          class="group w-full bg-white  relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
-        >
+        <div class="revealBottom overflow-hidden">
           <div
-            class="   flex flex-col items-center"
+            class="group w-full bg-white relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <svg
-              class=""
-              width="26"
-              height="27"
-              viewBox="0 0 26 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="24.5767"
-                    height="27"
-                    fill="white"
-                    transform="translate(25.2578 27) rotate(-180)"
+            <div class="flex flex-col items-center">
+              <svg
+                class=""
+                width="26"
+                height="27"
+                viewBox="0 0 26 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
+                    fill="currentColor"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="xl:w-80 text-base leading-normal text-center mt-4">
-              Just popped in for a taste and we’re very pleased with the flavor, quality and service we received! Not all cupcake shops can put out not only a tasty product but one that looks beautiful also. Well done and thank you for the Bible verse on my cupcake. It was just what I needed to hear today! God Bless!
-            </p>
+                  <path
+                    d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="24.5767"
+                      height="27"
+                      fill="white"
+                      transform="translate(25.2578 27) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="xl:w-80 text-base leading-normal text-center mt-4">
+                Just popped in for a taste and we’re very pleased with the
+                flavor, quality and service we received! Not all cupcake shops
+                can put out not only a tasty product but one that looks
+                beautiful also. Well done and thank you for the Bible verse on
+                my cupcake. It was just what I needed to hear today! God Bless!
+              </p>
+            </div>
+            <div
+              class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            >
+              <svg
+                width="34"
+                height="28"
+                viewBox="0 0 34 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_dd)">
+                  <path
+                    d="M17 19L28.2583 3.25H5.74167L17 19Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_dd"
+                    x="0.741699"
+                    y="0.25"
+                    width="32.5167"
+                    height="27.75"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feMorphology
+                      radius="1"
+                      operator="erode"
+                      in="SourceAlpha"
+                      result="effect1_dropShadow"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow"
+                    />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="effect1_dropShadow"
+                      result="effect2_dropShadow"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect2_dropShadow"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
           </div>
-          <div
-            class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
-          >
-            <svg
-              width="34"
-              height="28"
-              viewBox="0 0 34 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_dd)">
-                <path
-                  d="M17 19L28.2583 3.25H5.74167L17 19Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_dd"
-                  x="0.741699"
-                  y="0.25"
-                  width="32.5167"
-                  height="27.75"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="erode"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="3" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2.5" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="effect1_dropShadow"
-                    result="effect2_dropShadow"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect2_dropShadow"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
+          <div class="flex flex-col items-center justify-center mt-10">
+            <img
+              src="../img/reviews/amyGolike.png"
+              alt="profile picture"
+              class="w-12 h-12"
+            />
+            <p class="text-base font-semibold leading-4 my-2">Amy Golike</p>
+            <p class="text-base leading-4 text-center">Google Local Guide</p>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center mt-10">
-          <img
-            src="../img/reviews/amyGolike.png"
-            alt="profile picture"
-            class="w-12 h-12"
-          />
-          <p
-            class="text-base font-semibold leading-4 my-2 "
-          >
-            Amy Golike
-          </p>
-          <p
-            class="text-base leading-4 text-center  "
-          >
-            Google Local Guide
-          </p>
-        </div>
-      </div>
 
-      <!-- Review 3 -->
-      <div>
-        <div
-          class="group w-full bg-white overflow-hidden relative flex flex-col reveal items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
-        >
+        <!-- Review 3 -->
+        <div>
           <div
-            class="   flex flex-col items-center"
+            class="group w-full bg-white overflow-hidden relative flex flex-col reveal items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <svg
-              width="26"
-              height="27"
-              viewBox="0 0 26 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="24.5767"
-                    height="27"
-                    fill="white"
-                    transform="translate(25.2578 27) rotate(-180)"
+            <div class="flex flex-col items-center">
+              <svg
+                width="26"
+                height="27"
+                viewBox="0 0 26 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
+                    fill="currentColor"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="xl:w-80 text-base leading-normal text-center mt-4">
-              3x Visited. Never disappointed. Pistachio is #1, Lemon Drop is awesome! Coconut #2, Strawberries and Cream will put a smile on your face. The pancake cupcake is brilliant, a must try!
-            </p>
+                  <path
+                    d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="24.5767"
+                      height="27"
+                      fill="white"
+                      transform="translate(25.2578 27) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="xl:w-80 text-base leading-normal text-center mt-4">
+                3x Visited. Never disappointed. Pistachio is #1, Lemon Drop is
+                awesome! Coconut #2, Strawberries and Cream will put a smile on
+                your face. The pancake cupcake is brilliant, a must try!
+              </p>
+            </div>
+            <div
+              class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            >
+              <svg
+                width="34"
+                height="28"
+                viewBox="0 0 34 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_dd)">
+                  <path
+                    d="M17 19L28.2583 3.25H5.74167L17 19Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_dd"
+                    x="0.741699"
+                    y="0.25"
+                    width="32.5167"
+                    height="27.75"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feMorphology
+                      radius="1"
+                      operator="erode"
+                      in="SourceAlpha"
+                      result="effect1_dropShadow"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow"
+                    />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="effect1_dropShadow"
+                      result="effect2_dropShadow"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect2_dropShadow"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
           </div>
           <div
-            class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            class="flex flex-col items-center revealLeft overflow-hidden justify-center mt-10"
           >
-            <svg
-              width="34"
-              height="28"
-              viewBox="0 0 34 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_dd)">
-                <path
-                  d="M17 19L28.2583 3.25H5.74167L17 19Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_dd"
-                  x="0.741699"
-                  y="0.25"
-                  width="32.5167"
-                  height="27.75"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="erode"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="3" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2.5" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="effect1_dropShadow"
-                    result="effect2_dropShadow"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect2_dropShadow"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
+            <img
+              src="../img/reviews/darlaSeibert.png"
+              alt="profile picture"
+              class="w-12 h-12"
+            />
+            <p class="text-base font-semibold leading-4 my-2">Darla Seibert</p>
+            <p class="text-base leading-4 text-center"></p>
           </div>
         </div>
-        <div class="flex flex-col items-center revealLeft overflow-hidden justify-center mt-10">
-          <img
-            src="../img/reviews/darlaSeibert.png"
-            alt="profile picture"
-            class="w-12 h-12"
-          />
-          <p
-            class="text-base font-semibold leading-4 my-2 "
-          >
-            Darla Seibert
-          </p>
-          <p
-            class="text-base leading-4 text-center  "
-          >
-            
-          </p>
-        </div>
-      </div>
 
-      <!-- Review 4 -->
-      <div class="">
-        <div
-          class="group w-full bg-white overflow-hidden revealLeft relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
-        >
+        <!-- Review 4 -->
+        <div class="">
           <div
-            class="   flex flex-col items-center"
+            class="group w-full bg-white overflow-hidden revealLeft relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <svg
-              width="26"
-              height="27"
-              viewBox="0 0 26 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="24.5767"
-                    height="27"
-                    fill="white"
-                    transform="translate(25.2578 27) rotate(-180)"
+            <div class="flex flex-col items-center">
+              <svg
+                width="26"
+                height="27"
+                viewBox="0 0 26 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
+                    fill="currentColor"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="xl:w-80 text-base leading-normal text-center mt-4">
-              You may be surprised and thinking your eating a desert made for an angel. Yes! Its that gooood. Wonderful family and Christ centered. Consider purchase to gift and make sure you buy two because they are so delish.
-            </p>
+                  <path
+                    d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="24.5767"
+                      height="27"
+                      fill="white"
+                      transform="translate(25.2578 27) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="xl:w-80 text-base leading-normal text-center mt-4">
+                You may be surprised and thinking your eating a desert made for
+                an angel. Yes! Its that gooood. Wonderful family and Christ
+                centered. Consider purchase to gift and make sure you buy two
+                because they are so delish.
+              </p>
+            </div>
+            <div
+              class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            >
+              <svg
+                width="34"
+                height="28"
+                viewBox="0 0 34 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_dd)">
+                  <path
+                    d="M17 19L28.2583 3.25H5.74167L17 19Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_dd"
+                    x="0.741699"
+                    y="0.25"
+                    width="32.5167"
+                    height="27.75"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feMorphology
+                      radius="1"
+                      operator="erode"
+                      in="SourceAlpha"
+                      result="effect1_dropShadow"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow"
+                    />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="effect1_dropShadow"
+                      result="effect2_dropShadow"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect2_dropShadow"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
           </div>
           <div
-            class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            class="flex flex-col reveal overflow-hidden items-center justify-center mt-10"
           >
-            <svg
-              width="34"
-              height="28"
-              viewBox="0 0 34 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_dd)">
-                <path
-                  d="M17 19L28.2583 3.25H5.74167L17 19Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_dd"
-                  x="0.741699"
-                  y="0.25"
-                  width="32.5167"
-                  height="27.75"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="erode"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="3" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2.5" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="effect1_dropShadow"
-                    result="effect2_dropShadow"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect2_dropShadow"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
+            <img
+              src="../img/reviews/magsH.png"
+              alt="profile picture"
+              class="w-12 h-12"
+            />
+            <p class="text-base font-semibold leading-4 my-2">Mags H</p>
+            <p class="text-base leading-4 text-center">Google Local Guide</p>
           </div>
         </div>
-        <div class="flex flex-col reveal overflow-hidden items-center justify-center mt-10">
-          <img
-            src="../img/reviews/magsH.png"
-            alt="profile picture"
-            class="w-12 h-12"
-          />
-          <p
-            class="text-base font-semibold leading-4 my-2 "
-          >
-            Mags H
-          </p>
-          <p
-            class="text-base leading-4 text-center  "
-          >
-            Google Local Guide
-          </p>
-        </div>
-      </div>
 
         <!-- Review 5 -->
-      <div class="reveal overflow-hidden">
-        <div
-          class="group w-full bg-white  relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
-        >
+        <div class="reveal overflow-hidden">
           <div
-            class="   flex flex-col items-center"
+            class="group w-full bg-white relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            <svg
-              class=""
-              width="26"
-              height="27"
-              viewBox="0 0 26 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="24.5767"
-                    height="27"
-                    fill="white"
-                    transform="translate(25.2578 27) rotate(-180)"
+            <div class="flex flex-col items-center">
+              <svg
+                class=""
+                width="26"
+                height="27"
+                viewBox="0 0 26 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
+                    fill="currentColor"
                   />
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="xl:w-80 text-base leading-normal text-center mt-4">
-              Absolutely the best cup cake I have ever had!! So many great options, you can’t go wrong with any of them!
-            </p>
+                  <path
+                    d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="24.5767"
+                      height="27"
+                      fill="white"
+                      transform="translate(25.2578 27) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="xl:w-80 text-base leading-normal text-center mt-4">
+                Absolutely the best cup cake I have ever had!! So many great
+                options, you can’t go wrong with any of them!
+              </p>
+            </div>
+            <div
+              class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            >
+              <svg
+                width="34"
+                height="28"
+                viewBox="0 0 34 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_dd)">
+                  <path
+                    d="M17 19L28.2583 3.25H5.74167L17 19Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_dd"
+                    x="0.741699"
+                    y="0.25"
+                    width="32.5167"
+                    height="27.75"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feMorphology
+                      radius="1"
+                      operator="erode"
+                      in="SourceAlpha"
+                      result="effect1_dropShadow"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow"
+                    />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="effect1_dropShadow"
+                      result="effect2_dropShadow"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect2_dropShadow"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
           </div>
-          <div
-            class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
-          >
-            <svg
-              width="34"
-              height="28"
-              viewBox="0 0 34 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_dd)">
-                <path
-                  d="M17 19L28.2583 3.25H5.74167L17 19Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_dd"
-                  x="0.741699"
-                  y="0.25"
-                  width="32.5167"
-                  height="27.75"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="erode"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="3" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2.5" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="effect1_dropShadow"
-                    result="effect2_dropShadow"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect2_dropShadow"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
+          <div class="flex flex-col items-center justify-center mt-10">
+            <img
+              src="../img/reviews/btow19.png"
+              alt="profile picture"
+              class="w-12 h-12"
+            />
+            <p class="text-base font-semibold leading-4 my-2">btow19</p>
+            <p class="text-base leading-4 text-center"></p>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center mt-10">
-          <img
-            src="../img/reviews/btow19.png"
-            alt="profile picture"
-            class="w-12 h-12"
-          />
-          <p
-            class="text-base font-semibold leading-4 my-2 "
+
+        <!-- Review 6 -->
+        <div>
+          <div
+            class="group w-full bg-white overflow-hidden reveal relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
           >
-            btow19
-          </p>
-          <p
-            class="text-base leading-4 text-center  "
+            <div class="flex flex-col items-center">
+              <svg
+                width="26"
+                height="27"
+                viewBox="0 0 26 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0)">
+                  <path
+                    d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect
+                      width="24.5767"
+                      height="27"
+                      fill="white"
+                      transform="translate(25.2578 27) rotate(-180)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+              <p class="xl:w-80 text-base leading-normal text-center mt-4">
+                Fantastic Cupcakes but try the churo cheesecake bars! These are
+                something you would see on T.V baking shows! Incredible! I have
+                a feeling this shop will continue to stay busy due to the high
+                quality goods! Keep up the great work!
+              </p>
+            </div>
+            <div
+              class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
+            >
+              <svg
+                width="34"
+                height="28"
+                viewBox="0 0 34 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g filter="url(#filter0_dd)">
+                  <path
+                    d="M17 19L28.2583 3.25H5.74167L17 19Z"
+                    fill="currentColor"
+                  />
+                </g>
+                <defs>
+                  <filter
+                    id="filter0_dd"
+                    x="0.741699"
+                    y="0.25"
+                    width="32.5167"
+                    height="27.75"
+                    filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB"
+                  >
+                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feMorphology
+                      radius="1"
+                      operator="erode"
+                      in="SourceAlpha"
+                      result="effect1_dropShadow"
+                    />
+                    <feOffset dy="4" />
+                    <feGaussianBlur stdDeviation="3" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="BackgroundImageFix"
+                      result="effect1_dropShadow"
+                    />
+                    <feColorMatrix
+                      in="SourceAlpha"
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    />
+                    <feOffset dy="2" />
+                    <feGaussianBlur stdDeviation="2.5" />
+                    <feColorMatrix
+                      type="matrix"
+                      values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in2="effect1_dropShadow"
+                      result="effect2_dropShadow"
+                    />
+                    <feBlend
+                      mode="normal"
+                      in="SourceGraphic"
+                      in2="effect2_dropShadow"
+                      result="shape"
+                    />
+                  </filter>
+                </defs>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="flex flex-col revealLeft overflow-hidden items-center justify-center mt-10"
           >
-            
-          </p>
+            <img
+              src="../img/reviews/williamBarbee.png"
+              alt="profile picture"
+              class="w-12 h-12"
+            />
+            <p class="text-base font-semibold leading-4 my-2">William Barbee</p>
+            <p class="text-base leading-4 text-center"></p>
+          </div>
         </div>
       </div>
-
-      <!-- Review 6 -->
-      <div>
-        <div
-          class="group w-full bg-white overflow-hidden reveal relative flex flex-col items-center hover:bg-desertSand cursor-pointer shadow-md md:p-12 p-6"
-        >
-          <div
-            class="   flex flex-col items-center"
-          >
-            <svg
-              width="26"
-              height="27"
-              viewBox="0 0 26 27"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g clip-path="url(#clip0)">
-                <path
-                  d="M25.2578 14.3309H19.2969C19.3988 9.55819 20.6309 9.01642 22.1785 8.86178L22.7753 8.78051V3.53242L22.0874 3.57292C20.0666 3.69783 17.8323 4.09805 16.3417 6.11965C15.035 7.89183 14.459 10.7871 14.459 15.2316V23.4673H25.2578V14.3309Z"
-                  fill="currentColor"
-                />
-                <path
-                  d="M11.48 23.4673V14.3309H5.59859C5.70049 9.55819 6.89283 9.01642 8.44042 8.86178L8.99749 8.78051V3.53242L8.34931 3.57292C6.32844 3.69783 4.07421 4.09805 2.5836 6.11965C1.27707 7.89183 0.681147 10.7871 0.681147 15.2316V23.4673H11.48Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <clipPath id="clip0">
-                  <rect
-                    width="24.5767"
-                    height="27"
-                    fill="white"
-                    transform="translate(25.2578 27) rotate(-180)"
-                  />
-                </clipPath>
-              </defs>
-            </svg>
-            <p class="xl:w-80 text-base leading-normal text-center mt-4">
-              Fantastic Cupcakes but try the churo cheesecake bars! These are something you would see on T.V baking shows!  Incredible! I have a feeling this shop will continue to stay busy due to the high quality goods! Keep up the great work!
-            </p>
-          </div>
-          <div
-            class="text-white dark group-hover:text-desertSand absolute bottom-0 -mb-6"
-          >
-            <svg
-              width="34"
-              height="28"
-              viewBox="0 0 34 28"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g filter="url(#filter0_dd)">
-                <path
-                  d="M17 19L28.2583 3.25H5.74167L17 19Z"
-                  fill="currentColor"
-                />
-              </g>
-              <defs>
-                <filter
-                  id="filter0_dd"
-                  x="0.741699"
-                  y="0.25"
-                  width="32.5167"
-                  height="27.75"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feMorphology
-                    radius="1"
-                    operator="erode"
-                    in="SourceAlpha"
-                    result="effect1_dropShadow"
-                  />
-                  <feOffset dy="4" />
-                  <feGaussianBlur stdDeviation="3" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow"
-                  />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  />
-                  <feOffset dy="2" />
-                  <feGaussianBlur stdDeviation="2.5" />
-                  <feColorMatrix
-                    type="matrix"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in2="effect1_dropShadow"
-                    result="effect2_dropShadow"
-                  />
-                  <feBlend
-                    mode="normal"
-                    in="SourceGraphic"
-                    in2="effect2_dropShadow"
-                    result="shape"
-                  />
-                </filter>
-              </defs>
-            </svg>
-          </div>
-        </div>
-        <div class="flex flex-col revealLeft overflow-hidden items-center justify-center mt-10">
-          <img
-            src="../img/reviews/williamBarbee.png"
-            alt="profile picture"
-            class="w-12 h-12"
-          />
-          <p
-            class="text-base font-semibold leading-4 my-2 "
-          >
-            William Barbee
-          </p>
-          <p
-            class="text-base leading-4 text-center  "
-          >
-            
-          </p>
-        </div>
-      </div>
-    </div>
-      
-
     </section>
-
 
     <!-- Footer -->
 
@@ -1979,8 +1831,6 @@
               </div>
               <!-- social - end -->
             </div>
-
-            
 
             <!-- nav - start -->
             <div>
@@ -2092,13 +1942,11 @@
         <div
           class="flex flex-col md:flex-row justify-between border-t border-white px-5"
         >
-          <div
-            class=" border-white text-sm text-center md:text-start py-8"
-          >
+          <div class="border-white text-sm text-center md:text-start py-8">
             © 2022 - <span> <span id="copyYear"></span></span> Sweet and Simple
             Cupcakery. All rights reserved.
           </div>
-          <div class=" text-sm text-center md:text-end py-8">
+          <div class="text-sm text-center md:text-end py-8">
             <a href="https://trujillomedia.com" target="_blank">
               A website by:
               <span class="underline text-trujilloMediaBrandColor"
