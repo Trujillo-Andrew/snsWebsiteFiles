@@ -8,3 +8,40 @@ $(function(){
       }
   });
 });
+
+// Hide Cupcake Selections
+
+$(function(){
+    $('#hideCC').hide();$('#dessertChoice').change(function() {
+        if ($('#dessertChoice').val() == 'Cupcakes') {
+            $('#hideCC').show();
+        }
+        else {
+            $('#hideCC').hide();
+        }
+    });
+  });
+
+//   Hide Cake Selections
+$(function(){
+    $('#hideC').hide();$('#dessertChoice').change(function() {
+        if ($('#dessertChoice').val() == 'Cake') {
+            $('#hideC').show();
+        }
+        else {
+            $('#hideC').hide();
+        }
+    });
+  });
+
+//   Other Dessert Options
+$(function(){
+    $('#hideOther').hide();$('#dessertChoice').change(function() {
+        if ($('#dessertChoice').val() == 'Other') {
+            $('#hideOther').show();
+        }
+        else {
+            $('#hideOther').hide();
+        }
+    });
+  });
