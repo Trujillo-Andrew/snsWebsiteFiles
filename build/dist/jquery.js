@@ -45,3 +45,16 @@ $(function(){
         }
     });
   });
+
+//   Both Dessert Options
+//   Other Dessert Options
+$(function(){
+    $('#hideBoth').hide();$('#dessertChoice').change(function() {
+        if ($('#dessertChoice').val() == 'Cake & Cupcakes') {
+            $('#hideBoth').show();
+        }
+        else {
+            $('#hideBoth').hide();
+        }
+    });
+  });

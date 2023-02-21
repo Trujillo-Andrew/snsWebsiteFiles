@@ -96,10 +96,11 @@
           class="container mx-auto flex flex-col px-5 py-24 justify-center items-center"
         >
           <img
-            class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded mt-20 shadow-2xl"
+            class="lg:w-2/5 md:w-3/6 w-5/6  object-cover object-center rounded mt-20 shadow-2xl"
             alt="hero"
-            src="../img/wedding/wedding2.jpg"
+            src="../img/wedding/Ciara Carver-Gallegos Photography-4.jpg"
           />
+          <p class="text-xs revealLeft mb-10"> Photo Credts: Ciara Carver-Gallegos Photography</p>
           <div
             class="w-full md:w-2/3 flex flex-col mb-16 items-center text-center"
           >
@@ -198,10 +199,11 @@
           </div>
           <div class="mt-8 w-full">
             <img
-              class="w-1/2 mx-auto revealBottom"
-              src="../img/spotlight_photos/custom-3.jpeg"
-              alt="Wedding Event Photo"
+              class="w-2/3 mx-auto revealBottom"
+              src="../img/wedding/Ciara Carver-Gallegos Photography-2.jpg"
+              alt="Wedding Cupcake Photo"
             />
+            <p class="text-xs revealLeft "> Photo Credts: Ciara Carver-Gallegos Photography</p>
           </div>
           <div class="mt-10 flex justify-start items-start flex-col">
             <div class="flex flex-col justify-start items-start px-2 lg:px-0">
@@ -242,14 +244,35 @@
                 </p>
               </div>
             </div>
-            <div class="mt-8 flex-col justify-start items-start">
-              <div>
-                <img
-                  class="mx-auto w-2/3 revealBottom"
-                  src="../img/wedding/wedding1.jpg"
-                  alt="Wedding Cupcake"
-                />
+            <div class="mt-8 flex-col justify-center items-center mx-auto">
+
+              <!-- Wedding Cake Carousel -->
+              <div class="justify-center  items-center mx-auto">  
+                <div class="revealLeft flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-desertSand  ">
+                  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../img/wedding/Horizontal Ribbed.jpg" alt="Horizontal Ribbed Cake">
+                  <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5 class="mb-2 text-2xl font-secondaryHeader tracking-tight  ">Horizontal Ribbed Cake</h5>
+                      
+                  </div>
+                </div>
+                <div class=" reveal top flex flex-col my-5 items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-desertSand  ">
+                  <div class="flex flex-col justify-between p-4 leading-normal">
+                    <h5 class="mb-2 text-2xl font-secondaryHeader tracking-tight  ">Semi-Naked Cake</h5>
+                    
+                </div>
+                  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../img/wedding/semi-naked-weddingCake.jpg" alt="Semi Naked Cake">
+                  
+                </div>
+                <div class=" revealBottom flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-desertSand  ">
+                  <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg" src="../img/wedding/Smooth Cake.jpg" alt="Smooth Cake">
+                  <div class="flex flex-col justify-between p-4 leading-normal">
+                      <h5 class="mb-2 text-2xl font-secondaryHeader tracking-tight  ">Smooth Cake</h5>
+                      
+                  </div>
+                </div>
+
               </div>
+            </div>
               <div class="flex flex-col justify-start items-start px-2 lg:px-0">
                 <div>
                   <p
@@ -284,7 +307,7 @@
                   </p>
                 </div>
               </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -498,6 +521,7 @@
                           <option value="">Select One</option>
                           <option value="Cupcakes">Cupcakes</option>
                           <option value="Cake">Cake</option>
+                          <option value="Cake & Cupcakes">Cake & Cupcakes</option>
                           <option value="None">None</option>
                         </select>
                       </div>
@@ -578,6 +602,79 @@
                         </input>
                       </div>
                     </div>
+                  </div>
+                </div>
+
+                <!-- Both Desserts -->
+                <div id="hideBoth">
+                  <div class="md:flex mb-4">
+                    <div class="md:flex-1">
+                      <label
+                        class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                        >Cupcake Size</label
+                      >
+                      <div class="w-full flex">
+                        <span
+                          class="text-xs py-4 bg-grey-light text-grey-dark"
+                        ></span>
+                        <select
+                          class="flex-1 shadow-inner p-4 border-0"
+                          name="Cupcake Size"
+                          placeholder="Select One"
+                        >
+                          <option value="">Select One</option>
+                          <option value="Signature Cupcakes">Signature Cupcakes (1.5 per person) </option>
+                          <option value="Mini Cupcakes">Mini Cupcakes (2.5 per person) </option>
+                          
+                        </select>
+                      </div>
+                    </div>
+                    <div class="md:flex-1 md:pl-3 mt-2 md:mt-0">
+                      <label
+                        class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                        >Quantity of Cupcakes Desired</label
+                      >
+                      <div class="w-full flex">
+                        <span
+                          class="text-xs py-4 bg-grey-light text-grey-dark"
+                        ></span>
+                        <input
+                          class="flex-1 shadow-inner p-4 border-0"
+                          type="number"
+                          name="Cupcake Quantity"
+                          placeholder=""
+                        >
+                        </input>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="md:flex mb-4">
+                    <div class="md:flex-1">
+                      <label
+                        class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                        >Cake Size</label
+                      >
+                      <div class="w-full flex">
+                        <span
+                          class="text-xs py-4 bg-grey-light text-grey-dark"
+                        ></span>
+                        <select
+                          class="flex-1 shadow-inner p-4 border-0"
+                          name="Cake Size"
+                          placeholder="Select One"
+                        >
+                          <option value="">Select One</option>
+                          <option value="4 inch Cake">4" Cake </option>
+                          <option value="6 inch Cake">6" Cake </option>
+                          <option value="8 inch Cake">8" Cake </option>
+                          <option value="4 inch + 6 inch 2 tier">4" + 6" 2-tier Cake </option>
+                          <option value="6 inch + 8 inch 2 tier">6" + 8" 2-tier Cake</option>
+                          
+                          
+                        </select>
+                      </div>
+                    </div>
+                   
                   </div>
                 </div>
                 <!-- Other Dessert Options -->
