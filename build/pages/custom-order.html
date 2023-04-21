@@ -314,12 +314,15 @@
             <div class="md:flex mb-8 revealRight">
               <div class="md:w-1/3">
                 <legend class="uppercase tracking-wide text-sm">Contact</legend>
+                <p class="text-xs font-light text-red-500 max-w-sm">
+                  Pickup is available <br> 12pm-6pm <br> Tuesday - Saturday
+                </p>
               </div>
               <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
                 <div class="mb-4">
                   <label
                     class="block uppercase tracking-wide text-xs font-secondaryHeader"
-                    >Name</label
+                    >Name <span class="text-red-500">*</span></label
                   >
                   <input
                     class="w-full shadow-inner p-4 border-0"
@@ -332,7 +335,7 @@
                 <div class="mb-4">
                   <label
                     class="block uppercase tracking-wide text-xs font-secondaryHeader"
-                    >Phone</label
+                    >Phone <span class="text-red-500">*</span></label
                   >
                   <input
                     class="w-full shadow-inner p-4 border-0"
@@ -345,7 +348,7 @@
                 <div class="mb-4">
                   <label
                     class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
-                    >Occasion</label
+                    >Occasion <span class="text-red-500">*</span></label
                   >
                   <select
                     id="occasion"
@@ -362,7 +365,7 @@
                 <div class="mb-4">
                   <label
                     class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
-                    >Email</label
+                    >Email <span class="text-red-500">*</span></label
                   >
                   <input
                     class="w-full shadow-inner p-4 border-0"
@@ -375,15 +378,17 @@
               </div>
             </div>
 
-            <!-- Location Section -->
+            <!-- Delivery Section -->
             <div id="hide1" class="md:flex mb-8 revealRight">
               <div class="md:w-1/3">
                 <legend class="uppercase tracking-wide text-sm">
-                  Location
+                  Delivery
                 </legend>
                 <p class="text-xs font-light text-red-500 max-w-sm">
-                  This section is required when ordering a delivery, please fill
-                  out the details accurately.
+                  A Delivery Fee will be applied. <br>
+                  <br>
+
+                  Delivery is only available <br> 12pm-6pm <br> Tuesday - Saturday
                 </p>
               </div>
               <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
@@ -391,7 +396,7 @@
                   <div class="md:flex-1 md:pr-3">
                     <label
                       class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
-                      >Delivery Address</label
+                      >Delivery Address <span class="text-red-500">*</span></label
                     >
                     <input
                       class="w-full shadow-inner p-4 border-0"
@@ -412,6 +417,7 @@
                       placeholder="#"
                     />
                   </div>
+                  
                 </div>
                 <div class="md:flex mb-4">
                   <div class="md:flex-1 md:pr-3">
@@ -438,6 +444,41 @@
                       placeholder="(970) 858-1234"
                     />
                   </div>
+                  
+                </div>
+                <div class="md:flex mb-4">
+                  <div class="md:flex-1">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Delivery Time <span class="text-red-500">*</span></label
+                    >
+                    <div class="w-full flex">
+                      <input
+                        class="flex-1 shadow-inner p-4 border-0"
+                        type="time"
+                        required
+                        name="Ceremony Time"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                 
+                  <div class="md:flex-1 md:pl-3">
+                    <label
+                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
+                      >Delivery Date <span class="text-red-500">*</span></label
+                    >
+                    <div class="w-full flex">
+                      <input
+                        class="flex-1 shadow-inner p-4 border-0"
+                        type="date"
+                        required
+                        name="Wedding Date"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -445,138 +486,53 @@
             <!-- Details Section -->
             <div class="md:flex revealRight">
               <div class="md:w-1/3">
-                <legend class="uppercase tracking-wide text-sm">Details</legend>
+                <legend class="uppercase tracking-wide text-sm">Order Details</legend>
               </div>
               <div class="md:flex-1 mt-2 mb:mt-0 md:px-3">
                 <div class="md:flex mb-4">
-                  <div class="md:flex-1 md:pr-3">
-                    <label
-                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
-                      >Due Date</label
-                    >
-                    <span class="text-xs py-4 px-2 bg-grey-light text-red-500"
-                      >3 Day Minimum</span
-                    >
-                    <div class="w-full flex">
-                      <input
-                        class="flex-1 shadow-inner p-4 border-0"
-                        type="date"
-                        required
-                        name="Due Date"
-                        placeholder=""
-                      />
-                    </div>
+                  
+                  <div class="md:flex-1 md:pl-3">
+                    <label for="have_you_tried_sns_before">Have you tried Sweet & Simple before? <span class="text-red-500">*</span></label>
+                    <p>
+                    <input type="radio" name="have_you_tried_sns_before" value="Yes" >Yes</input>
+                    </p>
+                    <p>
+                    <input type="radio" name="have_you_tried_sns_before" value="No">No</input>
+                    </p>
                   </div>
-                  <div class="md:flex-1 md:pl-3 mt-2 md:mt-0">
-                    <label
-                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
-                      >Due Time</label
-                    >
-                    <span class="text-xs py-4 px-2 bg-grey-light text-red-500"
-                      >11a - 5p</span
-                    >
-                    <div class="w-full flex">
-                      <input
-                        class="flex-1 shadow-inner p-4 border-0"
-                        type="time"
-                        required
-                        name="Due Time"
-                        placeholder=""
-                      />
-                    </div>
-                  </div>
+                  
                 </div>
-                <div class="md:flex mb-4">
-                  <div class="md:flex-1">
+                <!-- Dessert Options -->
+                <div id="">
+                  <div class="md:flex-1 my-5">
                     <label
                       class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
-                      >Cake Flavor</label
+                      >What are you interested in ordering? <span class="text-red-500">*</span></label
                     >
-                    <div class="w-full flex">
+                    <div class="w-full flex-col">
                       <span
                         class="text-xs py-4 bg-grey-light text-grey-dark"
                       ></span>
-                      <select
-                        class="flex-1 shadow-inner p-4 border-0"
-                        name="Cake Flavor"
-                        placeholder="Select One"
-                      >
-                        <option value="">Select One</option>
-                        <option value="Vanilla">Vanilla</option>
-                        <option value="Chocolate">Chocolate</option>
-                        <option value="Red Velvet">Red Velvet</option>
-                        <option value="Carrot Cake">Carrot Cake</option>
-                        <option value="Other">Other</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="md:flex-1 md:pl-3 mt-2 md:mt-0">
-                    <label
-                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
-                      >Filling</label
-                    >
-                    <div class="w-full flex">
-                      <span
-                        class="text-xs py-4 bg-grey-light text-grey-dark"
-                      ></span>
-                      <select
-                        class="flex-1 shadow-inner p-4 border-0"
-                        type="text"
-                        required
-                        name="Filling"
-                        placeholder=""
-                      >
-                        <option>Select One</option>
-                        <option value="Lemon">Lemon</option>
-                        <option value="Caramel">Caramel</option>
-                        <option value="Strawberry Jelly">
-                          Strawberry Jelly
-                        </option>
-                        <option value="Raspberry Jelly">Raspberry Jelly</option>
-                        <option value="Buttercream">Buttercream</option>
-                        <option value="Nutella">Nutella</option>
-                        <option value="Biscoff">Biscoff</option>
-                        <option value="Other">Other</option>
-                        <option value="None">None</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-                <div class="md:flex mb-4">
-                  <div class="md:flex-1 mt-2 md:mt-0">
-                    <label
-                      class="block uppercase tracking-wide text-charcoal-darker text-xs font-secondaryHeader"
-                      >Filling</label
-                    >
-                    <div class="w-full flex">
-                      <span
-                        class="text-xs py-4 bg-grey-light text-grey-dark"
-                      ></span>
-                      <select
-                        class="flex-1 shadow-inner p-4 border-0"
-                        type="text"
-                        name="Product"
-                        required
-                        placeholder="Product"
-                      >
-                        <option>Select One</option>
-                        <option value="Cupcakes">Cupcakes</option>
-                        <option
-                          value="$40 6in 4 Layer - American Buttercream Frosting Only"
-                        >
-                          $40 6" 4 Layer - American Buttercream Frosting Only
-                        </option>
-                        <option
-                          value="$50 8in 4 Layer - American Buttercream Frosting Only"
-                        >
-                          $50 8" 4 Layer - American Buttercream Frosting Only
-                        </option>
-                        <option
-                          value="$25 4in 4 Layer - American Buttercream Frosting Only"
-                        >
-                          $25 4" 4 Layer - American Buttercream Frosting Only
-                        </option>
-                      </select>
+                      <input type="checkbox" id="vehicle1" name="Dessert Options" hidden value="Dessert Options">
+                      <label hidden for="vehicle1"> Treat Options</label><br>
+                      <input type="checkbox" id="vehicle3" name="Dessert Options" value="Signature Cupcakes">
+                      <label for="vehicle3">Signature Cupcakes</label><br>
+                      <input type="checkbox" id="vehicle3" name="Dessert Options" value="Mini Cupcakes">
+                      <label for="vehicle3">Mini Cupcakes</label><br>
+                      <input type="checkbox" id="vehicle3" name="Dessert Options" value="4 Inch 3-Layer Cakes">
+                      <label for="vehicle3">4" 3-Layer Cakes</label><br>
+                      <input type="checkbox" id="vehicle3" name="Dessert Options" value="6 Inch 3-Layer Cake">
+                      <label for="vehicle3">6" 3-Layer Cake</label><br>
+                      <input type="checkbox" id="vehicle3" name="Dessert Options" value="8 Inch 3-Layer Cake">
+                      <label for="vehicle3">8" 3-Layer Cake</label><br>
+                      <input type="checkbox" id="vehicle3" name="Dessert Options" value="Churro Cheesecake Bars">
+                      <label for="vehicle3">Churro Cheesecake Bars</label><br>
+                      <input type="checkbox" id="vehicle3" name="Dessert Options" value="Churro Cheesecake Sheet Cake">
+                      <label for="vehicle3">Churro Cheesecake Sheet Cake</label><br>
+                      <input type="checkbox" id="vehicle3" name="Dessert Options" value="Cake Pops">
+                      <label for="vehicle3">Cake Pops</label><br>
+                      
+                     
                     </div>
                   </div>
                 </div>
@@ -594,7 +550,7 @@
                 <textarea
                   class="w-full shadow-inner p-4 border-0"
                   name="Additional Information"
-                  placeholder="Please leave us details on any special requests for your order here."
+                  placeholder="For custom designs or themes, we require a 2-week notice"
                   rows="6"
                 ></textarea>
               </div>
